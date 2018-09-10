@@ -6,5 +6,5 @@ hola
 
 
 
-comandos vasicos
+comandos basicos
 
