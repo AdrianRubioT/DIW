@@ -1,3 +1,8 @@
+body{
+    text-shadow: 0 1px 3px #FF0000;
+    background: #0000FF;
+}
+
 .base{
     color: 
 
@@ -9,6 +14,7 @@
 
 
 }
+
 
 
 .fondo{  
