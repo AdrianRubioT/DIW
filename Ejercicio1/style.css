@@ -17,7 +17,18 @@ body{
 
 
 .fondo{  
-    background: linear-gradient(to right,  rgba(45,40,189,1) 0%,  rgba(45,40,189,1) 13%, rgba(217,53,35,1) 19%,  rgba(45,40,189,1) 26%, rgba(217,53,35,1) 32%,  rgba(45,40,189,1) 36%, rgba(217,53,35,1) 41%,  rgba(45,40,189,1) 45%, rgba(217,53,35,1) 51%, rgba(146,60,126,1) 54%,  rgba(45,40,189,1) 58%, rgba(217,53,35,1) 66%,  rgba(45,40,189,1) 71%, rgba(217,53,35,1) 76%,  rgba(45,40,189,1) 80%, rgba(217,53,35,1) 86%,  rgba(45,40,189,1) 93%);
+    /* background: linear-gradient(to right,  rgba(45,40,189,1) 0%,  rgba(45,40,189,1) 13%, rgba(217,53,35,1) 19%,  rgba(45,40,189,1) 26%, rgba(217,53,35,1) 32%,  rgba(45,40,189,1) 36%, rgba(217,53,35,1) 41%,  rgba(45,40,189,1) 45%, rgba(217,53,35,1) 51%, rgba(146,60,126,1) 54%,  rgba(45,40,189,1) 58%, rgba(217,53,35,1) 66%,  rgba(45,40,189,1) 71%, rgba(217,53,35,1) 76%,  rgba(45,40,189,1) 80%, rgba(217,53,35,1) 86%,  rgba(45,40,189,1) 93%); */
+    
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 50px,
+    rgba(45,40,189,1) 50px, rgba(217,53,35,0.5) 56px, transparent 56px, transparent 63px,
+    rgba(45,40,189,1) 63px, rgba(217,53,35,0.5) 69px, transparent 69px),
+    repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(217,53,35,0.5) 50px,
+    rgba(45,40,189,1) 56px, transparent 56px, transparent 63px, rgba(217,53,35,0.5) 63px,
+    rgba(45,40,189,1) 69px, transparent 69px),
+    repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(217,53,35,0.5) 5px,
+    rgba(45,40,189,1) 10px),
+    repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(217,53,35,0.5) 5px,
+    rgba(45,40,189,1) 10px);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e17d4', endColorstr='#d93523', GradientType=1 );
     
    
