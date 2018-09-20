@@ -33,3 +33,7 @@ table tr td:nth-child(1)  {
     vertical-align: top;
     font-weight: bold;
 }
+
+li{
+    list-style:none;
+}
