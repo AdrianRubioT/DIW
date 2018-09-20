@@ -1,4 +1,25 @@
 body{
     font-size: 13px;
-    font-family:  monospace
+    font-family:  sans-serif;
+
+    width:22.7em;
+
+    text-align: center;
+
+
+    /* style="width:22.7em; line-height: 1.4em; text-align:left; padding:.23em;" */
+}
+
+table p{
+    margin: 0em;
+}
+
+h1{
+    background-color:rgb(105, 160, 243);
+}
+
+table{
+    text-align: left;
+    
+    
 }
