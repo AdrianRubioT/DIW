@@ -24,6 +24,12 @@ h1{
 
 table{
     text-align: left;
+    
     width: 100%;
     box-sizing: inherit;
+}
+
+table tr td:nth-child(1)  {
+    vertical-align: top;
+    font-weight: bold;
 }
