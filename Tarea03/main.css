@@ -1,3 +1,27 @@
 *{
+    
+    width: 210px;
+}
+
+h1{
+    font-family: "sans-serif";
+    color:rgb(49, 45, 45);
+}
+
+p{
     font-family: 'Times New Roman', Times, serif;
+}
+
+.Cabecera{
+    color: rgb(45, 45, 235);
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height:0;
+}
+
+.texto{
+
+    line-height:2em;
+     
+
 }
