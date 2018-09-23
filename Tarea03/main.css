@@ -1,6 +1,7 @@
 *{
-    
+    line-height:1.5em;
     width: 210px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1{
@@ -8,9 +9,9 @@ h1{
     color:rgb(49, 45, 45);
 }
 
-p{
-    font-family: 'Times New Roman', Times, serif;
-}
+/* p{
+    
+} */
 
 .Cabecera{
     color: rgb(45, 45, 235);
@@ -19,9 +20,27 @@ p{
     line-height:0;
 }
 
-.texto{
+/* .texto{
 
     line-height:2em;
-     
+} */
 
+
+
+
+tr > td:nth-child(1){
+    text-align: left;
+}
+
+tr > td:nth-child(2){
+    text-align: right;
+}
+
+tr > th{
+    font-style: italic;
+    text-align: left;
+}
+
+tr > td{
+    border-top: 1px solid rgb(209, 204, 204);
 }
