@@ -13,7 +13,18 @@ div p, div img{
     float: left;
 }
 
+
 div a{
     float: right;
 }
 
+
+.nombre{
+    font-weight: bold;
+    margin: 5px;
+}
+
+.hastag{
+    font-size: 12px;
+    
+}
