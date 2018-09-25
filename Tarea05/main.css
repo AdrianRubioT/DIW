@@ -1,8 +1,19 @@
 *{
     font-family: Arial, sans-serif;
+
 }
 
 .user{
-    width: 30%;
+    max-width: 30%;
+    float: left;
+    margin: 15px;
+}
+
+div p, div img{
     float: left;
 }
+
+div a{
+    float: right;
+}
+
