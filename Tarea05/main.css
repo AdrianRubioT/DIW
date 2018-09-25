@@ -1,1 +1,8 @@
-algo dentro de aqui
+*{
+    font-family: Arial, sans-serif;
+}
+
+.user{
+    width: 30%;
+    float: left;
+}
