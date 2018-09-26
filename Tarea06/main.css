@@ -1,17 +1,22 @@
 
+/* cambiar los selectores de los floats a selectores pares e impares */
 
+.bloque1{
+    margin: 20px;
 
-.bloque1 > .texto1{
-    float: left;
 }
+
 .texto1{
     float: right;
+    margin: 5px;
 }
 
-.bloque1 > img{
+.bloque1 img{
     float: left;
+
 }
 
+/* no colorea */
 .bloque2{
     background-color: rgb(175, 175, 175);
 }
