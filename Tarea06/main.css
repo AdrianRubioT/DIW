@@ -1,9 +1,9 @@
 body{
     
     width: 70%;
-    height: 300px;
+    /* height: 300px; */
     margin: 25px;
-    
+    height: auto;
 }
 
 *{
@@ -11,9 +11,9 @@ body{
 }
 
 /* IMPARES */
-body > div:nth-child(odd){
-    width: 0, auto;
-}
+/* body > div:nth-child(odd){
+    
+} */
 
 body > div:nth-child(odd) > div{
     float: right;
@@ -24,7 +24,8 @@ body > div:nth-child(odd) > div{
 /* par */
 body > div:nth-child(even){ 
     background-color: rgb(175, 175, 175);
-    width: 0, auto;
+    float: left;
+    
 }
 
 body > div:nth-child(even) img{ 
@@ -41,5 +42,3 @@ body > div:nth-child(even) > div{
     width: 500px;
     float: left;
 }
-
-
