@@ -1,0 +1,32 @@
+*{
+    font-family: Arial, sans-serif;
+  
+}
+
+.user{
+    float: left;
+    max-width: 30%;
+    margin: 1%;
+}
+
+.imajen, .nombre, .hastag{
+    float: left;
+    margin: 5px;
+}
+
+
+
+.pajaro{
+    float: right;
+}
+
+.nombre{
+    font-weight: bold;
+    
+}
+
+
+.hastag{
+    font-size: 12px;
+    
+}
