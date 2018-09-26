@@ -1,28 +1,30 @@
 *{
     font-family: Arial, sans-serif;
-
+  
 }
 
 .user{
+    float: left;
     max-width: 30%;
-    float: left;
-    margin: 15px;
+    margin: 1%;
 }
 
-div p, div img{
+.imajen, .nombre, .hastag{
     float: left;
+    margin: 5px;
 }
 
 
-div a{
+
+.pajaro{
     float: right;
 }
-
 
 .nombre{
     font-weight: bold;
     margin: 5px;
 }
+
 
 .hastag{
     font-size: 12px;
