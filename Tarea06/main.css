@@ -1,35 +1,43 @@
-
-
 body{
+    
     width: 70%;
     height: 300px;
+    margin: 25px;
+    
 }
 
-
-body div:nth-child(even){
-    background-color: rgb(175, 175, 175);
-    float: right;
+*{
+    padding: 5px;
 }
 
-body div:nth-child(odd){
+/* IMPARES */
+body > div:nth-child(odd){
     width: 0, auto;
 }
 
-.texto1{
-    /* padding-left: 200px; */
+body > div:nth-child(odd) > div{
+    float: right;
     width:600px;
     height: 100%;
+}
+    
+/* par */
+body > div:nth-child(even){ 
+    background-color: rgb(175, 175, 175);
+    width: 0, auto;
+}
+
+body > div:nth-child(even) img{ 
     float: right;
 }
 
-/* no colorea */
-.bloque2{
-    width: auto;
-    
-    margin: 20px;
+body > div:nth-child(even) > div{
+    float: left;
+    width:600px;
+    height: 100%;
 }
 
-.bloque2 > .texto2{
+.texto2{
     width: 500px;
     float: left;
 }
