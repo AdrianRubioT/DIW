@@ -1,1 +1,25 @@
-algo
+
+
+
+.bloque1 > .texto1{
+    float: left;
+}
+.texto1{
+    float: right;
+}
+
+.bloque1 > img{
+    float: left;
+}
+
+.bloque2{
+    background-color: rgb(175, 175, 175);
+}
+
+.bloque2 > .texto2{
+    float: left;
+}
+.bloque2 > img{
+    float: right;
+}
+
