@@ -1,1 +1,9 @@
-hhkjdsnd
+nav{
+    background-color: #00ccaa;
+}
+
+
+nav li{
+    display: inline;
+}
+
