@@ -1,1 +1,48 @@
-/* algo */
+.grupoBottons{
+    
+    /* background-color: red; */
+    margin: 200px;
+    padding: 50px;
+}
+.grupoBottons a{
+    margin-right: 50px;
+    /* background-color: blueviolet; */
+    padding: 10px;
+}
+
+
+.grupoBottons a:nth-child(1){
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    background-color: red;
+}
+
+
+.grupoBottons a:nth-child(2){
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+
+    background: linear-gradient(60deg, blue 25%, red 35%, yellow 40%);
+
+    padding: 10px;
+    font-family: fantasy;
+    font-size: 18px;
+    color: white;
+    text-shadow:2px 2px 4px black;
+}
+
+
+.grupoBottons a:nth-child(3){
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+
+    background: repeating-linear-gradient(-60deg, grey 0%, black 15%);
+
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    
+}
