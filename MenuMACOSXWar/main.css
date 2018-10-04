@@ -2,21 +2,35 @@ nav{
     margin: 100px;
     align-content: center;
     background-color: #00ccaa;
-    /* float: left; */
+    float: left;
 
 }
 
 
 nav li{
     display: inline;
+
+}
+
+nav li img{
     
-    
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-timing-function: linear;
 }
 
 nav li img:hover{
-    transition-duration: 1s;
-    transition-delay: 0s;
-    transition-property: linear;
+    
+
+    
     transform: scale(2);
     
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-property: all;
+    /* transition-timing-function: linear; */
+    transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
+    /* transition-timing-function: cubic-bezier(.69,-0.01,.31,.97); */
+
 }
