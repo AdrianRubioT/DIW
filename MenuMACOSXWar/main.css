@@ -1,12 +1,22 @@
 nav{
-    margin: 50px;
-    
+    margin: 100px;
+    align-content: center;
     background-color: #00ccaa;
-    
+    /* float: left; */
+
 }
 
 
 nav li{
     display: inline;
+    
+    
 }
 
+nav li img:hover{
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-property: linear;
+    transform: scale(2);
+    
+}
