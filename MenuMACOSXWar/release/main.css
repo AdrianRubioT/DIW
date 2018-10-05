@@ -37,7 +37,7 @@ nav li img:hover{
 
 
 li:hover + li{
-    /* background-color: red; */
+   
    
    
     transform: scale(1.5);
@@ -47,7 +47,3 @@ li:hover + li{
     transition-property: all;
     transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
 }
-/* 
-li~li:hover+li{
-    background-color: blue;
-} */
