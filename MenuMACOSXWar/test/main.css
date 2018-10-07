@@ -52,6 +52,10 @@ li:hover + li{
     background-color: blue;
 }  */
 
-ol>li:hover:first-child{
-    background-color: blue;
-} 
+/* li:hover ? li li:hover ? li{
+    background-color: red;
+} */
+
+/* li img:hover ! li img{
+    background-color: red;
+}  */
