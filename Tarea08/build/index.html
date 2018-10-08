@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    
+    <form action="" method="get">
+
+        <div>
+            <label for="">E-mail</label>
+            <input type="email" id="email" required="true" placeholder="E-mail">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password" id="password" required="true" placeholder="Contraseña"  pattern="/^[A-Za-z0-9]{8.}/" minlength="8">
+        </div>
+
+        <div class="redondeado">
+            <label for="">Descripción</label>
+            <textarea name="Descripcion" id="descripcion" placeholder="Descripción"></textarea>
+        </div>
+
+
+        <div><input type="submit" value="Enviar información"></div>
+
+    </form>
+
+</body>
+</html>
