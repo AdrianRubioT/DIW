@@ -1,4 +1,18 @@
-/* algo */
+
+.contenido{
+    text-align: center;
+    margin: 50px;
+    padding: 5px;
+    background-color: aquamarine;
+
+    border-style: solid;
+    border-color: grey;
+    border-radius: 10px;
+}
+
+form div{
+    margin: 0.5em;
+}
 
 .redondeado{
     border-radius: 30px;
