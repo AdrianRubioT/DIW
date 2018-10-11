@@ -19,5 +19,16 @@ form div{
 }
 
 .password input:invalid{
-    transform: rotate(-90deg); 
+    transform: rotate(-10deg); 
 }
+
+/* 
+
+.descripcion{
+    animation-name: roll;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+
+}
+ */
+/* https://discourse.wicg.io/t/text-content-css-value-akin-to-attr/629 */
