@@ -17,3 +17,7 @@ form div{
 .redondeado{
     border-radius: 30px;
 }
+
+.password input:invalid{
+    transform: rotate(-90deg); 
+}
