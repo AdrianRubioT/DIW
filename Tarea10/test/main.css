@@ -1,0 +1,34 @@
+
+.contenido{
+    text-align: center;
+    margin: 50px;
+    padding: 5px;
+    background-color: aquamarine;
+
+    border-style: solid;
+    border-color: grey;
+    border-radius: 10px;
+}
+
+form div{
+    margin: 0.5em;
+}
+
+.redondeado{
+    border-radius: 30px;
+}
+
+.password input:invalid{
+    transform: rotate(-10deg); 
+}
+
+/* 
+
+.descripcion{
+    animation-name: roll;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+
+}
+ */
+/* https://discourse.wicg.io/t/text-content-css-value-akin-to-attr/629 */
