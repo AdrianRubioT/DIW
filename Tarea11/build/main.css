@@ -1,8 +1,11 @@
-*{
-    margin: 5px;
+nav, section, footer{
+    margin: 20px;
 }
 
-.list-group-item{
+.puntuacionLetras{
     list-style-type: lower-alpha;
 }
 
+.informacion{
+    list-style-type: none;
+}
