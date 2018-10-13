@@ -9,3 +9,7 @@ nav, section, footer{
 .informacion{
     list-style-type: none;
 }
+
+.lista{
+    margin: 1em;
+}
