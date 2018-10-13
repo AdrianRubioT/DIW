@@ -34,70 +34,118 @@
 
         <form action="" method="get">
 
+            <div class="row">
+
+                <div class="form-group col-lg-4">
+                    <label for="">ALUMNE/A:</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group col-lg-3">
+                    <label for="">GRUP:</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group col-lg-4">
+                    <label for="">PROFESOR/A</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-lg-1">
+                    <label for="">Horari d'atenció:</label>
+                    <input type="time">
+                </div>
+
+                <div class="form-group col-lg-2">
+                    <label for="">Data de l'incident:</label>
+                    <input type="date"><input type="time">
+                </div>
+
+                <div class="form-group col-lg-2">
+                    <label for="">Lloc:</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+            <p>En aplicació de l'article 37 del decret 39/08 sobre drets i deures, es comunica al pare/mare/tutor legal
+                de l'alumne la imposició de la següent mesura correctora:</p>
             <div class="form-group">
-                <label for="">Alumno:</label>
-                <div> <input type="text"> </div>
-            </div>
 
-            <div>
-                <label for="">grupo:</label>
-                <div> <input type="text"></div>
-            </div>
-
-            <div>
-                <label for="">Profesor/a</label>
-                <div> <input type="text"></div>
-            </div>
-
-            <div>
-                <label for="">Horario d'atenció:</label>
-                <div> <input type="time"></div>
-            </div>
-
-            <div>
-                <label for="">Data de l'incident:</label>
-                <div> <input type="date"><input type="time"></div>
-            </div>
-
-            <div>
-                <label for="">Lloc:</label>
-                <div> <input type="text"></div>
-            </div>
-
-            <div>
-                <ul class="motivo">
+                <ul class="list-group">
 
                     <!-- b -->
-                    <li>Compareixença davant el cap d'estudis/director</li>
+                    <li class="list-group-item">
+                        <div class="checkbox">
+                            <input type="checkbox" value="">
+                            <label>
+                                a) Compareixença davant el cap d'estudis/director
+                            </label>
+                        </div>
+                    </li>
+
                     <!-- d -->
-                    <li>retirada d'aparells electrònics (1)</li>
+                    <li class="list-group-item">
+                        <div class="checkbox">
+                            <input type="checkbox" value="">
+                            <label>
+                                b) retirada d'aparells electrònics (1)
+                            </label>
+                        </div>
+                    </li>
+
                     <!-- e -->
-                    <li>privació del temps de recreació els dies <input type="text"></li>
+                    <li class="list-group-item">
+                        <div class="checkbox">
+                            <input type="checkbox" value="">
+                            <label for="">
+                                c) privació del temps de recreació els dies <input type="text">
+                            </label>
+                        </div>
+                    </li>
 
                     <!-- g -->
-                    <li>realizació de les següents tasques educadores: <input type="text">els dies <input type="text">
-                        i
-                        amb l'orari <input type="time">- <input type="time"></li>
+                    <li class="list-group-item">
+                        <div class="checkbox">
+                            <input type="checkbox" value="">
+                            <label for="">
+                                realizació de les següents tasques educadores: <input type="text">els dies <input type="text">
+                                i
+                                amb l'orari
+                                <input type="time"> - <input type="time">
+                            </label>
+                        </div>
+                    </li>
 
                     <!-- i -->
-                    <li>suspenció del dret de l'asistència en activitats extraescolars i complementàries des de <input
-                            type="time">
-                        fins a <input type="time">(2)</li>
+                    <li class="list-group-item">
+                        <div class="checkbox">
+                            <input type="checkbox" value="">
+                            <label for="">
+                                suspenció del dret de l'asistència en activitats extraescolars i complementàries des de
+                                <input type="time">
+                                fins a <input type="time">(2)
+                            </label>
+                        </div>
+                    </li>
 
                 </ul>
             </div>
 
-            <div>
+            <div class="form-group">
                 <p>Descripció de l'incident:</p>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
 
-            <div>
+            <div class="form-group">
                 <p>Tipicació (3) de l'incident segons l'article 35:</p>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label>La comunicació als pares es fa pel següents mitjans: </label>
                 <div class="checkbox">
                     <label><input type="checkbox" value="">Tèlefon: <input type="text"></label>
