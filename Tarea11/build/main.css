@@ -1,4 +1,8 @@
-ul.motivo li{
+*{
+    margin: 5px;
+}
+
+.list-group-item{
     list-style-type: lower-alpha;
 }
 
