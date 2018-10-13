@@ -13,3 +13,16 @@ nav, section, footer{
 .lista{
     margin: 1em;
 }
+
+.lista li{
+    margin: 0.5em;
+}
+
+input[type="submit"]{
+    margin: 20px;
+}
+
+section{
+    border-top: 3px solid;
+    padding-top: 1em; 
+}
