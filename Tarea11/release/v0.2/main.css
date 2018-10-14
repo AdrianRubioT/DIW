@@ -1,0 +1,28 @@
+nav, section, footer{
+    margin: 20px;
+}
+
+.puntuacionLetras{
+    list-style-type: lower-alpha;
+}
+
+.informacion{
+    list-style-type: none;
+}
+
+.lista{
+    margin: 1em;
+}
+
+.lista li{
+    margin: 0.5em;
+}
+
+input[type="submit"]{
+    margin: 20px;
+}
+
+section{
+    border-top: 3px solid;
+    padding-top: 1em; 
+}
