@@ -7,8 +7,8 @@
     <title>Formulario de medidas correctoras</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
     <script src="main.js"></script>
-
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
@@ -32,23 +32,23 @@
         <!-- vigilar que el acento se sale de la caja h4 -->
         <h4>COMUNICACIÓ DE MESURES CORRECTORES</h4>
 
-        <form action="" method="get">
+        <form onsubmit="return onSubmit(this)" >
 
             <div class="row">
 
                 <div class="form-group col-lg-4">
                     <label for="">ALUMNE/A:</label>
-                    <input type="text">
+                    <input type="text" name="alumno">
                 </div>
 
                 <div class="form-group col-lg-3">
                     <label for="">GRUP:</label>
-                    <input type="text">
+                    <input type="text" name="grupo">
                 </div>
 
                 <div class="form-group col-lg-4">
                     <label for="">PROFESOR/A</label>
-                    <input type="text">
+                    <input type="text" name="profesor">
                 </div>
             </div>
 
@@ -56,17 +56,17 @@
 
                 <div class="form-group col-lg-1">
                     <label for="">Horari d'atenció:</label>
-                    <input type="time">
+                    <input type="time" name="hora_atencio">
                 </div>
 
                 <div class="form-group col-lg-2">
                     <label for="">Data de l'incident:</label>
-                    <input type="date"><input type="time">
+                    <input type="date" name="fecha_incidente"><input type="time" name="hora_incidente">
                 </div>
 
                 <div class="form-group col-lg-2">
                     <label for="">Lloc:</label>
-                    <input type="text">
+                    <input type="text" name="lugar">
                 </div>
 
             </div>
@@ -138,12 +138,12 @@
 
             <div class="form-group">
                 <p>Descripció de l'incident:</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" value="" cols="30" rows="10"></textarea>
             </div>
 
             <div class="form-group">
                 <p>Tipicació (3) de l'incident segons l'article 35:</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" value="" cols="30" rows="10"></textarea>
             </div>
 
             <div class="form-group list-group">
@@ -173,9 +173,9 @@
 
 
             <input type="submit">
-
-        </form>
-
+            
+        </form  onsubmit="onSubmit(this)">
+        
     </section>
 
 
