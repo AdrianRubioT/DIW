@@ -1,8 +1,8 @@
 1 --> Retidada de aparels electronics 
 desplegable a la tipicacio.
 
-2 --> input profesor sea despegable con los porfeosres 
+2 --> input profesor sea despegable con los porfeosres de la base de datos
 
-3 --> horario de atencion que sea mas indicativo que pertenece al profesor
+3 --> horario de atencion que sea mas indicativo que pertenece al profesor en cuestion
 
 4 --> siempre que se mencione al padre madre... tambien a tutor/ra legal
