@@ -1,0 +1,8 @@
+1 --> Retidada de aparels electronics 
+desplegable a la tipicacio.
+
+2 --> input profesor sea despegable con los porfeosres 
+
+3 --> horario de atencion que sea mas indicativo que pertenece al profesor
+
+4 --> siempre que se mencione al padre madre... tambien a tutor/ra legal
