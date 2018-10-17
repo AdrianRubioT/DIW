@@ -1,0 +1,75 @@
+nav, section, footer{
+    margin: 20px;
+}
+
+.laSenia{
+    height: 160px;
+    width: 430px;
+
+    float: left;
+}
+
+.generalitat{
+    float: left;
+}
+
+.cabecera div{
+    height: calc(50% - 300px);
+    width: calc(50% - 542px);
+
+    margin: 10px;
+}
+
+section{
+    float: left;
+    width: 100%;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.puntuacionLetras{
+    list-style-type: lower-alpha;
+}
+
+.informacion{
+    list-style-type: none;
+}
+
+.lista{
+    /* margin: 1em; */
+    margin:0;
+    padding:0;
+}
+
+.lista li{
+    margin: 0.5em 1em;
+}
+
+
+
+@media (min-width: 600px){
+
+    .lista li .lista{
+       margin:0 0 0 1.3rem;
+       padding:0;
+    }
+
+    .lista li{
+        margin: 0em 1em;
+    }
+
+}
+
+input[type="submit"]{
+    margin: 20px;
+}
+
+section{
+    border-top: 3px solid;
+    padding-top: 1em; 
+}
