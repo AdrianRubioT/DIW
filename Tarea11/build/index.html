@@ -41,61 +41,86 @@
 
     <section>
         <!-- vigilar que el acento se sale de la caja h4 -->
-        <h4>COMUNICACIÓ DE MESURES CORRECTORES</h4>
+        <h4 class="jumbotron text-center">COMUNICACIÓ DE MESURES CORRECTORES</h4>
 
         <form onsubmit="return onSubmit(this)">
 
-            <div class="row">
+            <div class="form-row">
 
                 <div class="alumno col-lg-4">
-                    <div class="form-group ">
-                        <label for="alumno">ALUMNE/A:</label>
-                        <input type="text" name="alumno">
+
+                    <label class="sr-only" for="inlineFormInputGroup">Alumne</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Alumne</div>
+                        </div>
+                        <input type="text" class="form-control" id="alumno" placeholder="Alumno">
                     </div>
 
-                    <div class="form-group">
-                        <label for="grupo">GRUP:</label>
-                        <input type="text" name="grupo">
+                    <label class="sr-only" for="inlineFormInputGroup">Grup</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Grup</div>
+                        </div>
+                        <input type="text" class="form-control" id="grupo" placeholder="Grup">
                     </div>
+
                 </div>
 
                 <div class="profesor col-lg-4">
 
-                    <div class="form-group">
-                        <label for="profesor">PROFESOR/A:</label>
-                        <input type="text" name="profesor">
+                    <label class="sr-only" for="inlineFormInputGroup">PROFESOR/A:</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">PROFESOR/A:</div>
+                        </div>
+                        <input type="text" class="form-control" id="profesor" placeholder="PROFESOR/A:">
                     </div>
 
-                    <div class="form-group">
-                        <label for="hora_atencio">Horari d'atenció:</label>
-                        <input type="time" name="hora_atencio">
+                    <label class="sr-only" for="inlineFormInputGroup">Horari d'atenció:</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Horari d'atenció:</div>
+                        </div>
+                        <input type="time" class="form-control" id="atencion" placeholder="Horari d'atenció:">
                     </div>
+
                 </div>
 
                 <div class="momento col-lg-4">
 
-                    <div class="form-group">
-                        <label for="fecha_incidente hora_incidente">Data de l'incident:</label>
-                        <input type="date" name="fecha_incidente"><input type="time" name="hora_incidente">
+                    <label class="sr-only" for="inlineFormInputGroup">Data de l'incident:</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Data de l'incident:</div>
+                        </div>
+                        <input type="date" class="form-control" id="fecha" placeholder="Data de l'incident:">
                     </div>
 
-                    <div class="form-group">
-                        <label for="lugar">Lloc:</label>
-                        <input type="text" name="lugar">
+                    <label class="sr-only" for="inlineFormInputGroup">Lloc:</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Lloc:</div>
+                        </div>
+                        <input type="date" class="form-control" id="lugar" placeholder="Lloc:">
                     </div>
-
+                    
                 </div>
 
             </div>
 
 
-
             <p>En aplicació de l'article 37 del decret 39/08 sobre drets i deures, es comunica al pare/mare/tutor legal
-                de l'alumne la imposició de la següent mesura correctora:</p>
+                de l'alumne la imposició de la següent mesura correctora:
+            </p>
+
+            <div>
+
+
+            </div>
+
 
             <div class="form-group form-check">
-
-                
 
                 <ul class="list-group">
 
