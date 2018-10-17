@@ -37,17 +37,17 @@
             <div class="row">
 
                 <div class="form-group col-lg-4">
-                    <label for="">ALUMNE/A:</label>
+                    <label for="alumno">ALUMNE/A:</label>
                     <input type="text" name="alumno">
                 </div>
 
                 <div class="form-group col-lg-3">
-                    <label for="">GRUP:</label>
+                    <label for="grupo">GRUP:</label>
                     <input type="text" name="grupo">
                 </div>
 
                 <div class="form-group col-lg-4">
-                    <label for="">PROFESOR/A</label>
+                    <label for="profesor">PROFESOR/A:</label>
                     <input type="text" name="profesor">
                 </div>
             </div>
@@ -55,17 +55,17 @@
             <div class="row">
 
                 <div class="form-group col-lg-1">
-                    <label for="">Horari d'atenció:</label>
+                    <label for="hora_atencio">Horari d'atenció:</label>
                     <input type="time" name="hora_atencio">
                 </div>
 
                 <div class="form-group col-lg-2">
-                    <label for="">Data de l'incident:</label>
+                    <label for="fecha_incidente hora_incidente">Data de l'incident:</label>
                     <input type="date" name="fecha_incidente"><input type="time" name="hora_incidente">
                 </div>
 
                 <div class="form-group col-lg-2">
-                    <label for="">Lloc:</label>
+                    <label for="lugar">Lloc:</label>
                     <input type="text" name="lugar">
                 </div>
 
@@ -73,7 +73,7 @@
 
             <p>En aplicació de l'article 37 del decret 39/08 sobre drets i deures, es comunica al pare/mare/tutor legal
                 de l'alumne la imposició de la següent mesura correctora:</p>
-            <div class="form-group">
+            <div class="form-group form-check">
 
                 <ul class="list-group">
 
@@ -113,10 +113,10 @@
                             <input type="checkbox" value="">
                             <label for="">
                                 d) Realizació de les següents tasques educadores: 
-                                <input type="text">
-                                els dies <input type="text">
+                                <input type="text" form="castigoD">
+                                els dies <input type="text" name="castigoD">
                                 i amb l'orari
-                                <input type="time"> - <input type="time">
+                                <input type="time" name="castigoDinicio"> - <input type="time" name="castigoDfinal">
                             </label>
                         </div>
                     </li>
