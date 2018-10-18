@@ -11,3 +11,5 @@
 6 --> multiSeleccion de las distintas tipicaciones
 
 7 --> quitar las puntuaciones de los checkbox
+
+8 --> ajustar distancia entre los times del checkbox de privacio del temps de recreacio
