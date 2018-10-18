@@ -19,5 +19,6 @@
 9 --> mirar clase para poner label en medio de dos inputs
 
 10 --> cambiar (3) por desplegable con el apartado 3 de la siguiente section en el primer textarea
+posiblemente realizado
 
 11 --> salto de linea en la tipificacio se sale del area
