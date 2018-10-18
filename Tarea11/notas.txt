@@ -22,3 +22,5 @@
 posiblemente realizado
 
 11 --> salto de linea en la tipificacio se sale del area
+
+12 --> corregir el margen: provoca que aparezca el scroll inferior
