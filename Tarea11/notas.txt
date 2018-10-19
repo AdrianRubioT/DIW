@@ -24,3 +24,7 @@ posiblemente realizado
 11 --> salto de linea en la tipificacio se sale del area
 
 12 --> corregir el margen: provoca que aparezca el scroll inferior
+
+13 --> el piremr grupo de inputs con checkbox no coinciden las cajas
+
+14 --> suspensio del dret de asistencia no visualiza bien los labels
