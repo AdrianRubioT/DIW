@@ -125,39 +125,50 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                                <label for="">Retirada d'aparells electrònics</label>
+                                <input type="text" class="form-control" placeholder="Retirada d'aparells electrònics"
+                                    aria-label="Text input with checkbox">
+                                <small id="refencia" class="form-text text-muted">El pare o la mare o tutor/ra legal de
+                                    l'alumne podrà retirar l'aparell a partir del dia següent de
+                                    rebre esta notificació en la direccrió d'estudis.
+                                </small>
 
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
-                            <label for="">Retirada d'aparells electrònics (1)</label>
+                            </div>
                         </div>
                     </div>
-                    <input type="text" class="form-control" placeholder="Retirada d'aparells electrònics" aria-label="Text input with checkbox">
                 </div>
+
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                             <label for="">Privació del temps de recreació els dies</label>
+                            <input type="time" class="form-control" aria-label="Text input with checkbox">
+                            <!-- poner separador y acercar los times -->
+                            <input type="time" class="form-control" aria-label="Text input with checkbox">
                         </div>
                     </div>
-                    <input type="time" class="form-control" aria-label="Text input with checkbox">
-                    <!-- poner separador y acercar los times -->
-                    <input type="time" class="form-control" aria-label="Text input with checkbox">
+
                 </div>
 
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
+                    <div class="input-group">
                         <div class="input-group-text">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                             <label for="">Realizació de les següents tasques educadores:</label>
                             <input type="text" class="form-control" aria-label="Text input with checkbox">
-                            <label for="">els dies</label><input type="text" name="castigoD">
+                            <label for="">els dies</label>
+                            <input type="text" class="form-control" name="castigoD">
                             i amb l'orari
-                            <input type="time" name="castigoDinicio"> -
-                            <input type="time" name="castigoDfinal">
+                            <input type="time" class="form-control" name="castigoDinicio">
+                            -
+                            <input type="time" class="form-control" name="castigoDfinal">
                         </div>
                     </div>
 
@@ -170,10 +181,20 @@
                             <label for="">Suspenció del dret de l'asistència en activitats extraescolars i
                                 complementàries des de
                             </label>
+                            <input type="time">
+                            fins a <input type="time">
+                            <small id="refencia" class="form-text text-muted">El pare o la mare o tutor/ra legal de
+                                l'alumne disposa d'en termini de 10 dies a partir de rebre
+                                esta comunicaió per al preceptiu trámit d'audiencia amb el profesor que ha imposat la
+                                mesura
+                                correctora. Per la qual cosa l'horari d'atencio del professor figura al costal del seu
+                                nom i telefon de
+                                l'institud en la capçalera.
+                            </small>
+
                         </div>
                     </div>
-                    <input type="time">
-                    fins a <input type="time">(2)
+
                 </div>
 
 
@@ -422,7 +443,7 @@
                     </div>
                 </div>
                 <label type="text" class="form-control" aria-label="Text input with checkbox">
-                        Els actes que dificulten o impedisquen una falte contrària a les normes de convivència.
+                    Els actes que dificulten o impedisquen una falte contrària a les normes de convivència.
                 </label>
             </div>
 
@@ -433,8 +454,8 @@
                     </div>
                 </div>
                 <label type="text" class="form-control" aria-label="Text input with checkbox">
-                        La negativa al compliment de les mesures correctores adoptades davant de conductes contráries a
-                        les normes de convivéncia.
+                    La negativa al compliment de les mesures correctores adoptades davant de conductes contráries a
+                    les normes de convivéncia.
                 </label>
             </div>
 
@@ -445,7 +466,7 @@
                     </div>
                 </div>
                 <label type="text" class="form-control" aria-label="Text input with checkbox">
-                        L'és inadequat de les infraestructures i béns o equips materials del centre.
+                    L'és inadequat de les infraestructures i béns o equips materials del centre.
                 </label>
             </div>
 
@@ -456,16 +477,16 @@
                     </div>
                 </div>
                 <label type="text" class="form-control" aria-label="Text input with checkbox">
-                        La desobediéncia en el compliment de les normes de carácter propi del centre i que estiguen
-                        incloses en el seu projecte educatiu.
+                    La desobediéncia en el compliment de les normes de carácter propi del centre i que estiguen
+                    incloses en el seu projecte educatiu.
                 </label>
             </div>
 
 
 
             <!-- <div class="form-group"> -->
-                <!-- cambiar (3) por desplegable con el apartado 3 de la siguiente section-->
-                <!-- <label for="exampleFormControlTextarea1">Tipicació (3) de l'incident segons l'article 35:</label>
+            <!-- cambiar (3) por desplegable con el apartado 3 de la siguiente section-->
+            <!-- <label for="exampleFormControlTextarea1">Tipicació (3) de l'incident segons l'article 35:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
  -->
@@ -490,9 +511,11 @@
                         <div class="input-group-text">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                             <label for="">Tèlefon:</label>
+                            <input type="text" class="form-control" placeholder="Tèlefon">
                         </div>
+                        
                     </div>
-                    <input type="text" class="form-control" placeholder="Tèlefon">
+                    
                 </div>
 
                 <div class="input-group mb-3">
@@ -500,9 +523,10 @@
                         <div class="input-group-text">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                             <label for="">Correu:</label>
+                            <input type="text" class="form-control" placeholder="Correu">
                         </div>
                     </div>
-                    <input type="text" class="form-control" placeholder="Correu">
+                    
                 </div>
 
                 <div class="input-group mb-3">
@@ -510,9 +534,10 @@
                         <div class="input-group-text">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                             <label for="">Per mig de l'alumne:</label>
+                            <input type="text" class="form-control" placeholder="alumne">
                         </div>
                     </div>
-                    <input type="text" class="form-control" placeholder="alumne">
+                    
                 </div>
 
                 <div class="input-group mb-3">
@@ -520,9 +545,10 @@
                         <div class="input-group-text">
                             <input type="checkbox" aria-label="Checkbox for following text input">
                             <label for="">Amb compareixença del pare/mare/tutor/tutora legal:</label>
+                            <input type="text" class="form-control" placeholder="pare/mare/tutor/tutora legal ">
                         </div>
                     </div>
-                    <input type="text" class="form-control" placeholder="pare/mare/tutor/tutora legal ">
+                    
                 </div>
 
 
@@ -556,11 +582,11 @@
     </section>
 
 
-    <section>
+    <!-- <section>
 
         <ul class="informacion lista">
-            <!-- PREGUNTAR SI AÑADIR A TUTOR LEGAL -->
-            <li>
+            
+             <li>
                 (1) El pare o la mare o tutor/ra legal de l'alumne podrà retirar l'aparell a partir del dia següent de
                 rebre esta notificació en la direccrió d'estudis.
             </li>
@@ -576,7 +602,7 @@
         </ul>
 
 
-    </section>
+    </section> -->
 
 
     <footer>
