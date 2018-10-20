@@ -1,41 +1,46 @@
-1 --> Retidada de aparels electronics desplegable a la tipicacio.
+isues{
+        3 --> horario de atencion que sea mas indicativo que pertenece al profesor en cuestion
+                HECHO
 
-2 --> input profesor sea despegable con los porfeosres de la base de datos
-
-3 --> horario de atencion que sea mas indicativo que pertenece al profesor en cuestion
-        HECHO
-
-
-4 --> siempre que se mencione al padre madre... tambien a tutor/ra legal
-
-5 --> cambiar formulario para partes leves o graves
-
-6 --> multiSeleccion de las distintas tipicaciones
-
-7 --> quitar las puntuaciones de los checkbox
-        HECHO
-
-8 --> ajustar distancia entre los times del checkbox de privacio del temps de recreacio 
+        8 --> ajustar distancia entre los times del checkbox de privacio del temps de recreacio 
         y poner un lavel en medio
+        8.1 --> cambiar los inputs hay que indicar los dias de castigo
+        
+        11 --> salto de linea en la tipificacio se sale del area
+        12 --> corregir el margen: provoca que aparezca el scroll inferior
 
-9 --> mirar clase para poner label en medio de dos inputs
+        13 --> el piremr grupo de inputs con checkbox no coinciden las cajas
+        HECHO
 
-10 --> cambiar (3) por desplegable con el apartado 3 de la siguiente 
+        14 --> suspensio del dret de asistencia no visualiza bien los labels
+        HECHO
+
+        15 --> checkbox l'us del telefon... al final se sale de la caja
+
+        16 --> las etiquetas small aparezcan debajo de su checkbox
+
+        17 --> algunos grupos de checkbox terminan en cuadrado
+
+        18 --> placeholder  retirada d'aparells electronics se corta en las ultimas letras
+}
+
+por hacer{
+        1 --> Retidada de aparels electronics desplegable a la tipicacio y multiples selecciones.
+        2 --> input profesor sea despegable con los porfeosres de la base de datos
+        5 --> cambiar formulario para partes leves o graves
+
+        7 --> quitar las puntuaciones de los checkbox
+                HECHO
+
+        10 --> cambiar (3) por desplegable con el apartado 3 de la siguiente 
         section en el primer textarea 
-posiblemente realizado
+                posiblemente realizado
 
-11 --> salto de linea en la tipificacio se sale del area
 
-12 --> corregir el margen: provoca que aparezca el scroll inferior
 
-13 --> el piremr grupo de inputs con checkbox no coinciden las cajas
-        HECHO
+}
 
-14 --> suspensio del dret de asistencia no visualiza bien los labels
-        HECHO
+comun{
+        4 --> siempre que se mencione al padre madre... tambien a tutor/ra legal
+}
 
-15 --> checkbox l'us del telefon... al final se sale de la caja
-
-16 --> las etiquetas small aparezcan debajo de su checkbox
-
-17 --> algunos grupos de checkbox terminan en cuadrado
