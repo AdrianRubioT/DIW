@@ -13,12 +13,15 @@
 6 --> multiSeleccion de las distintas tipicaciones
 
 7 --> quitar las puntuaciones de los checkbox
+        HECHO
 
-8 --> ajustar distancia entre los times del checkbox de privacio del temps de recreacio y poner un lavel en medio
+8 --> ajustar distancia entre los times del checkbox de privacio del temps de recreacio 
+        y poner un lavel en medio
 
 9 --> mirar clase para poner label en medio de dos inputs
 
-10 --> cambiar (3) por desplegable con el apartado 3 de la siguiente section en el primer textarea
+10 --> cambiar (3) por desplegable con el apartado 3 de la siguiente 
+        section en el primer textarea 
 posiblemente realizado
 
 11 --> salto de linea en la tipificacio se sale del area
@@ -26,5 +29,13 @@ posiblemente realizado
 12 --> corregir el margen: provoca que aparezca el scroll inferior
 
 13 --> el piremr grupo de inputs con checkbox no coinciden las cajas
+        HECHO
 
 14 --> suspensio del dret de asistencia no visualiza bien los labels
+        HECHO
+
+15 --> checkbox l'us del telefon... al final se sale de la caja
+
+16 --> las etiquetas small aparezcan debajo de su checkbox
+
+17 --> algunos grupos de checkbox terminan en cuadrado
