@@ -2,6 +2,10 @@ nav, section, footer{
     margin: 10px;
 }
 
+span{
+    margin-left: 1em;
+}
+
 .laSenia{
     height: 160px;
     width: 430px;
