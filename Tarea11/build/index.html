@@ -109,8 +109,27 @@
                 </div>
 
                 <div class="nivel col">
+                    <!-- https://getbootstrap.com/docs/4.1/components/collapse/ -->
+                    <!-- https://stackoverflow.com/questions/37753407/bootstrap-collapse-how-to-expand-only-one-div-at-a-time/37759350 -->
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ParteLeve"
+                        aria-expanded="false" aria-controls="ParteLeve" data-parent="monogram-acc">Parte leve</button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ParteGrave"
+                        aria-expanded="false" aria-controls="ParteGrave" data-parent="monogram-acc">Parte grave</button>
+                </div>
 
+            </div>
 
+            <div class="collapse multi-collapse collapse show" id="ParteLeve">
+                <div class="card card-body">
+                    parte leve
+                </div>
+            </div>
+
+            </div>
+
+            <div class="collapse multi-collapse" id="ParteGrave">
+                <div class="card card-body">
+                    parte grave
                 </div>
 
             </div>
