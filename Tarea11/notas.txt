@@ -37,6 +37,10 @@ por hacer{
                 posiblemente realizado
 
 
+        --> añadir menu para mostrar y acumular las tipificaciones al formulario
+        https://html.com/input-type-hidden/
+        
+
 
 }
 
@@ -44,3 +48,9 @@ comun{
         4 --> siempre que se mencione al padre madre... tambien a tutor/ra legal
 }
 
+
+informacion aprendizaje{
+        <!-- https://getbootstrap.com/docs/4.1/components/collapse/ -->
+        <!-- https://stackoverflow.com/questions/37753407/bootstrap-collapse-how-to-expand-only-one-div-at-a-time/37759350 -->
+
+}

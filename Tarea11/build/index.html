@@ -98,28 +98,28 @@
                         <input type="time" class="form-control" id="hora" placeholder="Moment de l'incident:">
                     </div>
 
-                    <label class="sr-only" for="inlineFormInputGroup">Lloc:</label>
+                    <!-- <label class="sr-only" for="inlineFormInputGroup">Lloc:</label>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
                             <div class="input-group-text">Lloc:</div>
                         </div>
                         <input type="date" class="form-control" id="lugar" placeholder="Lloc:">
-                    </div>
+                    </div> -->
 
-                </div>
-
-                <div class="nivel col">
-                    <!-- https://getbootstrap.com/docs/4.1/components/collapse/ -->
-                    <!-- https://stackoverflow.com/questions/37753407/bootstrap-collapse-how-to-expand-only-one-div-at-a-time/37759350 -->
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ParteLeve"
-                        aria-expanded="false" aria-controls="ParteLeve" data-parent="monogram-acc">Parte leve</button>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ParteGrave"
-                        aria-expanded="false" aria-controls="ParteGrave" data-parent="monogram-acc">Parte grave</button>
                 </div>
 
             </div>
 
-            <div class="collapse multi-collapse collapse show" id="ParteLeve">
+            <!-- <div class="nivel col">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ParteLeve"
+                    aria-expanded="false" aria-controls="ParteLeve">Parte leve</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ParteGrave"
+                    aria-expanded="false" aria-controls="ParteGrave">Parte grave</button>
+            </div>
+
+
+
+            <div class=" multi-collapse collapse show" id="ParteLeve">
                 <div class="card card-body">
                     parte leve
                 </div>
@@ -132,7 +132,7 @@
                     parte grave
                 </div>
 
-            </div>
+            </div> -->
 
 
 
@@ -148,10 +148,10 @@
                 <div class="input-group mb-3">
                     <div class="input-group-text">
                         <div class="input-group-prepend">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
+                            <input id="gg" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                         <pre> </pre>
-                        <span>Compareixença davant el cap d'estudis/director</span>
+                        <label for="gg">Compareixença davant el cap d'estudis/director</label>
                     </div>
                 </div>
 
@@ -172,7 +172,7 @@
                         </div>
 
                         <pre> </pre>
-                        <span>Retirada d'aparells electrònics</span>
+                        <label>Retirada d'aparells electrònics</label>
 
                         <pre> </pre>
                         <input type="text" class="form-control" placeholder="Retirada d'aparells electrònics"
@@ -664,7 +664,7 @@
                     </div>
                     <label type="text" class="form-control" aria-label="Text input with checkbox">
                         <!-- preguntar perjudicar perjudiquen  -->
-                        Les actuacios que puguen perjudicar perjudiquen greument la salut i la integritat personals
+                        Les actuacios que puguen perjudicar greument la salut i la integritat personals
                         dels menbres de la comunitat educativa.
                     </label>
                 </div>
@@ -712,7 +712,8 @@
                         </div>
                     </div>
                     <label type="text" class="form-control" aria-label="Text input with checkbox">
-                        La negatica reiterada al compliment de les mesures disciplinàries adoptades davant de faltes que afecten greument a la convivència en el centre.
+                        La negatica reiterada al compliment de les mesures disciplinàries adoptades davant de faltes
+                        que afecten greument a la convivència en el centre.
                     </label>
                 </div>
 
