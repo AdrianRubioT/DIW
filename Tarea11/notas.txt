@@ -41,7 +41,7 @@ por hacer{
         https://html.com/input-type-hidden/
         
 
-
+        --> Rebisar y pasar a Valenciano
 
 }
 
@@ -56,6 +56,6 @@ informacion aprendizaje{
 
         dropdown:
         https://getbootstrap.com/docs/4.1/components/dropdowns/
-        
+
 
 }
