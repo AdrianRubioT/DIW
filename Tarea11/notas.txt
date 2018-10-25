@@ -42,6 +42,7 @@ por hacer{
         
 
 
+
 }
 
 comun{
@@ -52,5 +53,9 @@ comun{
 informacion aprendizaje{
         <!-- https://getbootstrap.com/docs/4.1/components/collapse/ -->
         <!-- https://stackoverflow.com/questions/37753407/bootstrap-collapse-how-to-expand-only-one-div-at-a-time/37759350 -->
+
+        dropdown:
+        https://getbootstrap.com/docs/4.1/components/dropdowns/
+        
 
 }
