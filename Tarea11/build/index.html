@@ -54,7 +54,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Alumne</div>
                         </div>
-                        <input type="text" class="form-control" id="alumno" placeholder="Alumne">
+                        <input name="alumno" type="text" class="form-control" id="alumno" placeholder="Alumne">
                     </div>
 
                     <label class="sr-only" for="grupo">Grup</label>
@@ -62,7 +62,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Grup</div>
                         </div>
-                        <input type="text" class="form-control" id="grupo" placeholder="Grup">
+                        <input name="grupo" type="text" class="form-control" id="grupo" placeholder="Grup">
                     </div>
 
                 </div>
@@ -75,7 +75,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">PROFESOR/A:</div>
                         </div>
-                        <input type="text" class="form-control" id="profesor" placeholder="PROFESOR/A:">
+                        <input name="profesor" type="text" class="form-control" id="profesor" placeholder="PROFESOR/A:">
                     </div>
 
                     <label class="sr-only" for="horariAtencion">Horari d'atenció del profesor:</label>
@@ -83,7 +83,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Horari d'atenció del profesor:</div>
                         </div>
-                        <input type="time" class="form-control" id="horariAtencion" placeholder="Horari d'atenció del profesor:">
+                        <input name="horariAtencion" type="time" class="form-control" id="horariAtencion" placeholder="Horari d'atenció del profesor:">
                     </div>
 
                 </div>
@@ -95,8 +95,8 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Data de l'incident:</div>
                         </div>
-                        <input type="date" class="form-control" id="fechaIncidente" placeholder="Data de l'incident:">
-                        <input type="time" class="form-control" id="horaIncidente" placeholder="Moment de l'incident:">
+                        <input name="fechaIncidente" type="date" class="form-control" id="fechaIncidente" placeholder="Data de l'incident:">
+                        <input name="horaIncidente" type="time" class="form-control" id="horaIncidente" placeholder="Moment de l'incident:">
                     </div>
 
                 </div>
@@ -115,7 +115,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-text">
                         <div class="input-group-prepend">
-                            <input id="castigo1" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="castigo1" id="castigo1" type="checkbox"  >
                         </div>
                         <pre> </pre>
                         <label for="castigo1">Compareixença davant el cap d'estudis/director</label>
@@ -125,7 +125,7 @@
                 <!-- <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="" type="checkbox" >
                             <label for="">Compareixença davant el cap d'estudis/director</label>
                         </div>
                     </div>
@@ -135,14 +135,14 @@
                 <div class="input-group mb-3">
                     <div class="input-group-text">
                         <div class="input-group-prepend">
-                            <input id="castigo2" type="checkbox">
+                            <input name="castigo2" id="castigo2" type="checkbox">
                         </div>
 
                         <pre> </pre>
                         <label for="castigo2">Retirada d'aparells electrònics</label>
 
                         <pre> </pre>
-                        <input id="castigo3" type="text" class="form-control" placeholder="Retirada d'aparells electrònics"
+                        <input name="castigo3" id="castigo3" type="text" class="form-control" placeholder="Retirada d'aparells electrònics"
                             aria-label="Text input with checkbox" />
 
                         <pre> </pre>
@@ -177,11 +177,11 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="castigo4" type="checkbox">
+                            <input name="castigo4" id="castigo4" type="checkbox">
                             <label for="castigo4">Privació del temps de recreació els dies</label>
-                            <input id="inicioCastigo" type="time" class="form-control">
+                            <input name="inicioCastigo" id="inicioCastigo" type="time" class="form-control">
                             <!-- poner separador y acercar los times -->
-                            <input id="finCastigo" type="time" class="form-control">
+                            <input name="finCastigo" id="finCastigo" type="time" class="form-control">
                         </div>
                     </div>
 
@@ -191,15 +191,15 @@
                 <div class="input-group mb-3">
                     <div class="input-group">
                         <div class="input-group-text">
-                            <input id="castigo5" type="checkbox">
+                            <input name="castigo5" id="castigo5" type="checkbox">
                             <label for="castigo5">Realizació de les següents tasques educadores:</label>
-                            <input id="tarea5" type="text" class="form-control" placeholder="tasca">
+                            <input name="tarea5" id="tarea5" type="text" class="form-control" placeholder="tasca">
                             <label for="tarea5">els dies</label>
-                            <input id="diesTarea5" type="text" class="form-control" name="castigoD">
+                            <input name="diasTarea5" id="diasTarea5" type="text" class="form-control" name="castigoD">
                             i amb l'orari
-                            <input id="inicioTarea5" type="time" class="form-control" name="castigoDinicio">
+                            <input name="inicioTarea5" id="inicioTarea5" type="time" class="form-control" name="castigoDinicio">
                             -
-                            <input id="finTarea5" type="time" class="form-control" name="castigoDfinal">
+                            <input name="finTarea5" id="finTarea5" type="time" class="form-control" name="castigoDfinal">
                         </div>
                     </div>
 
@@ -208,13 +208,13 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="castigo6" type="checkbox">
+                            <input name="castigo6" id="castigo6" type="checkbox">
                             <label for="castigo6">Suspenció del dret de l'asistència en activitats extraescolars i
                                 complementàries des de
                             </label>
-                            <input id="inicioCastigo6" type="time">
+                            <input name="inicioCastigo6" id="inicioCastigo6" type="time">
                             fins a
-                            <input id="finCastigo6" type="time">
+                            <input name="finCastigo6" id="finCastigo6" type="time">
                             <small id="refencia" class="form-text text-muted">El pare o la mare o tutor/ra legal de
                                 l'alumne disposa d'en termini de 10 dies a partir de rebre
                                 esta comunicaió per al preceptiu trámit d'audiencia amb el profesor que ha imposat la
@@ -294,7 +294,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve1" type="checkbox">
+                            <input name="tipi-leve1" id="tipi-leve1" type="checkbox">
                         </div>
                     </div>
                     <label for="tipi-leve1" type="text" class="form-control">Les faltes de
@@ -305,7 +305,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve2" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve2" id="tipi-leve2" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve2" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -316,7 +316,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve3" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve3" id="tipi-leve3" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve3" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -328,7 +328,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve4" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve4" id="tipi-leve4" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve4" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -339,7 +339,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve5" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve5" id="tipi-leve5" type="checkbox"  >
                         </div>
                     </div>
                     <label id="tipi-leve5" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -352,7 +352,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve6" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve6" id="tipi-leve6" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve6" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -364,7 +364,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve7" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve7" id="tipi-leve7" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve7" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -376,7 +376,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve8" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve8" id="tipi-leve8" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve8" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -388,7 +388,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve9" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve9" id="tipi-leve9" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve9" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -400,7 +400,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve10" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve10" id="tipi-leve10" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve10" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -413,7 +413,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve11" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve11" id="tipi-leve11" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve11" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -426,7 +426,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve12" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve12" id="tipi-leve12" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve12" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -437,7 +437,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve13" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve13" id="tipi-leve13" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve13" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -449,7 +449,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve14" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve14" id="tipi-leve14" type="checkbox"  >
                         </div>
                     </div>
 
@@ -464,7 +464,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve15" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve16" id="tipi-leve15" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve16" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -475,7 +475,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve17" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve17" id="tipi-leve17" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve17" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -488,7 +488,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve18" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve18" id="tipi-leve18" type="checkbox"  >
                         </div>
                     </div>
                     <label for="tipi-leve18" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -499,7 +499,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve19" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-leve19" id="tipi-leve19" type="checkbox" >
                         </div>
                     </div>
                     <label for="tipi-leve19" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -567,7 +567,7 @@
                             <label for="">
                                 e) Suspenció del dret de l'asistència en activitats extraescolars i complementàries des
                                 de
-                                <input type="time">
+                                <input  type="time">
                                 fins a <input type="time">(2)
                             </label>
                         </div>
@@ -588,7 +588,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave1" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave1" id="tipi-grave1" type="checkbox" >
                         </div>
                     </div>
                     <label for="tipi-grave1" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -600,7 +600,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave2" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave2" id="tipi-grave2" type="checkbox" >
                         </div>
                     </div>
                     <label for="tipi-grave2" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -613,7 +613,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave3" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave3" id="tipi-grave3" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave3" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -627,7 +627,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave4" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave4" id="tipi-grave4" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave4" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -639,7 +639,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave5" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave5" id="tipi-grave5" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave5" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -650,7 +650,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave6" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave6" id="tipi-grave6" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave6" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -661,7 +661,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave7" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave7" id="tipi-grave7" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave7" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -673,7 +673,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave8" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave8" id="tipi-grave8" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave8" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -685,7 +685,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave9" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave9" id="tipi-grave9" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave9" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -698,7 +698,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave10" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave10" id="tipi-grave10" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave10" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -710,7 +710,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave11" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave11" id="tipi-grave11" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave11" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -722,7 +722,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave12" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave12" id="tipi-grave12" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave12" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -734,7 +734,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave13" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave13" id="tipi-grave13" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave13" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -746,7 +746,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave14" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave14" id="tipi-grave14" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave14" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -757,7 +757,7 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-grave15" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="tipi-grave15" id="tipi-grave15" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label for="tipi-grave15" type="text" class="form-control" aria-label="Text input with checkbox">
@@ -770,7 +770,7 @@
                 <!-- <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="tipi-leve" type="checkbox" aria-label="Checkbox for following text input">
+                            <inputs id="tipi-leve" type="checkbox" aria-label="Checkbox for following text input">
                         </div>
                     </div>
                     <label type="text" class="form-control" aria-label="Text input with checkbox">
@@ -809,9 +809,9 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="checkboxTelefono" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="checkboxTelefono" id="checkboxTelefono" type="checkbox" aria-label="Checkbox for following text input">
                             <label for="checkboxTelefono">Tèlefon:</label>
-                            <input id="telfono" type="text" class="form-control" placeholder="Tèlefon">
+                            <input name="telfono" id="telfono" type="text" class="form-control" placeholder="Tèlefon">
                         </div>
 
                     </div>
@@ -821,9 +821,9 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="checkboxCorreo" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="checkboxCorreo" id="checkboxCorreo" type="checkbox" aria-label="Checkbox for following text input">
                             <label for="checkboxCorreo">Correu:</label>
-                            <input id="correo" type="text" class="form-control" placeholder="Correu">
+                            <input name="correo" id="correo" type="text" class="form-control" placeholder="Correu">
                         </div>
                     </div>
 
@@ -832,10 +832,10 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="comunicacionAlumno" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="comunicacionAlumno" id="comunicacionAlumno" type="checkbox" aria-label="Checkbox for following text input">
                             <label for="comunicacionAlumno" for="">Per mig de l'alumne:</label>
                             <!-- preguntar por alumnos intermediario -->
-                            <input id="alumnoIntermediario" type="text" class="form-control" placeholder="alumne">
+                            <input name="alumnoIntermediario" id="alumnoIntermediario" type="text" class="form-control" placeholder="alumne">
                         </div>
                     </div>
 
@@ -844,9 +844,9 @@
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="compareinxenzaPadres" type="checkbox" aria-label="Checkbox for following text input">
+                            <input name="compareinxenzaPadres" id="compareinxenzaPadres" type="checkbox" aria-label="Checkbox for following text input">
                             <label for="compareinxenzaPadres">Amb compareixença del pare/mare/tutor/tutora legal:</label>
-                            <input id="madrePadre" type="text" class="form-control" placeholder="pare/mare/tutor/tutora legal ">
+                            <input name="madrePadre" id="madrePadre" type="text" class="form-control" placeholder="pare/mare/tutor/tutora legal ">
                         </div>
                     </div>
 
