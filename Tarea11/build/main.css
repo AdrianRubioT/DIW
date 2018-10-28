@@ -65,7 +65,19 @@ img{
     margin: 0.5em 1em;
 }
 
+.listaTipicacio{
 
+    /* width:150px; */
+    width: 350px;
+    height:5em;
+
+    overflow:scroll;
+}
+
+
+.tipificacion{
+    white-space: normal;
+}
 
 @media (min-width: 600px){
 
