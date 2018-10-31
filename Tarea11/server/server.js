@@ -36,7 +36,7 @@ app.get('/',(req,res)=>{
 });
 
 // Require Investigadores routes
-require('./app/routes/investigador.routes.js')(app);
+require('./app/routes/convivencia.routes.js')(app);
 
 
 
