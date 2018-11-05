@@ -1,4 +1,4 @@
-const convivencia = require('../models/convivencia.model.js');
+const Convivencia = require('../models/convivencia.model.js');
 
 // Crear y salvar
 exports.create = (req, res) => {
@@ -11,7 +11,7 @@ exports.create = (req, res) => {
         });
     }
 
-    const convivencia = new convivencia({
+    const convivencia = new Convivencia({
 
         /* datos Basicos */
         alumno: req.body.alumno,
@@ -21,20 +21,20 @@ exports.create = (req, res) => {
         horaAtencioProfesor: req.body.horaAtencioProfesor,
 
         /* castigos */
-        castigo1: req.body.castigo1,
+        castigo1: req.body.castigo1 || false,
 
-        castigo2: req.body.castigo2,
+        castigo2: req.body.castigo2 || false,
         castigo3: req.body.castigo2Aparell,
 
-        castigo3: req.body.castigo3,
+        castigo3: req.body.castigo3 || false,
         castigo3inicioCastigo: req.body.castigo3inicioCastigo,
         castigo3finCastigo: req.body.castigo3finCastigo,
 
-        castigo4: req.body.castigo4,
+        castigo4: req.body.castigo4 || false,
         castigo4tarea4: req.body.castigo4tarea4,
         castigo4inicioTarea4: req.body.castigo4inicioTarea4,
 
-        castigo5: req.body.castigo5,
+        castigo5: req.body.castigo5 || false,
         castigo5inicioCastigo5: req.body.castigo5inicioCastigo5,
         castigo5finCastigo5: req.body.castigo5finCastigo5,
 
