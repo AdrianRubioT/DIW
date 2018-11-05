@@ -35,7 +35,7 @@ app.get('/',(req,res)=>{
     res.json({"message":"Parte Backend de nuestro programa"});
 });
 
-// Require Investigadores routes
+// Require convivenciaes routes
 require('./app/routes/convivencia.routes.js')(app);
 
 

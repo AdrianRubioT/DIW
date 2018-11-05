@@ -1,18 +1,18 @@
 module.exports = (app) => {
-    const investigadores = require('../controllers/convivencia.controller.js');
+    const convivencia = require('../controllers/convivencia.controller.js');
 
-    // Create a new investigadores
-    app.post('/investigadores', investigadores.create);
+    // Create a new convivencia
+    app.post('/convivencia', convivencia.create);
 
-    // Retrieve all investigadores
-    app.get('/investigadores', investigadores.findAll);
+    // Retrieve all convivencia
+    app.get('/convivencia', convivencia.findAll);
 
-    // Retrieve a single investigadores with investigadorId
-    app.get('/investigadores/:investigadorId', investigadores.findOne);
+    // Retrieve a single convivencia with convivenciaId
+    app.get('/convivencia/:convivenciaId', convivencia.findOne);
 
-    // Update a investigadores with investigadorId
-    app.put('/investigadores/:investigadorId', investigadores.update);
+    // Update a convivencia with convivenciaId
+    app.put('/convivencia/:convivenciaId', convivencia.update);
 
-    // Delete a investigadores with investigadorId
-    app.delete('/investigadores/:investigadorId', investigadores.delete);
+    // Delete a convivencia with convivenciaId
+    app.delete('/convivencia/:convivenciaId', convivencia.delete);
 }
