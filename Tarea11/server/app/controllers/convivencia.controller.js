@@ -24,8 +24,8 @@ exports.create = (req, res) => {
         castigo1: req.body.castigo1 || false,
 
         castigo2: req.body.castigo2 || false,
-        castigo3: req.body.castigo2Aparell,
 
+        castigo3: req.body.castigo2Aparell,
         castigo3: req.body.castigo3 || false,
         castigo3inicioCastigo: req.body.castigo3inicioCastigo,
         castigo3finCastigo: req.body.castigo3finCastigo,
@@ -106,7 +106,7 @@ exports.create = (req, res) => {
 // Obtener todos los convivenciaes
 exports.findAll = (req, res) => {
 
-    convivencia.find().then(convivencia => {
+    Convivencia.find().then(convivencia => {
         res.send(convivencia);
     }).catch(err => {
         res.status(500).send({
@@ -119,7 +119,7 @@ exports.findAll = (req, res) => {
 
 // Obtener un convivencia por Id
 exports.findOne = (req, res) => {
-    convivencia.findById(req.params.convivenciaId)
+    Convivencia.findById(req.params.convivenciaId)
         .then(convivencia => {
             if (!convivencia) {
                 return res.status(404).send({
@@ -152,7 +152,7 @@ exports.update = (req, res) => {
     }
 
     // Find note and update it with the request body
-    convivencia.findByIdAndUpdate(req.params.convivenciaId, {
+    Convivencia.findByIdAndUpdate(req.params.convivenciaId, {
         nombre: req.body.nombre || "Sin nombre",
         profesion: req.body.profesion || "Sin profesion",
         puntosVida: req.body.puntosVida || 0,
@@ -179,7 +179,7 @@ exports.update = (req, res) => {
 
 // Borrar un convivencia 
 exports.delete = (req, res) => {
-    convivencia.findByIdAndRemove(req.params.convivenciaId)
+    Convivencia.findByIdAndRemove(req.params.convivenciaId)
         .then(convivencia => {
             if (!convivencia) {
                 return res.status(404).send({
