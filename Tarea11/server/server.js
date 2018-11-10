@@ -41,6 +41,11 @@ require('./app/routes/convivencia.routes.js')(app);
 
 
 
+// Paginas publicas (estaticas)
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Require Investigadores routes
+require('./app/routes/investigador.routes.js')(app);
 
 
 
