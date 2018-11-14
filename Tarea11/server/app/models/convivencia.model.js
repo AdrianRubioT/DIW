@@ -82,4 +82,4 @@ const convivenciaSchema = mongoose.Schema({
     });
 
 
-module.exports = mongoose.model('Investigador', convivenciaSchema);
+module.exports = mongoose.model('Incidencia', convivenciaSchema);
