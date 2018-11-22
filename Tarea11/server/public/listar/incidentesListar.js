@@ -6,6 +6,12 @@ $.getJSON( "http://localhost:3000/convivencia", function( data ) {
     items.push( "<li id='" + val._id + "' class='list-group-item'>" + val.alumno + "</li>" );
   });
  
+/* si esta vacio se llenara un hueco indicando que esta vacio */
+if (items.length == 0) {
+  console.log("al array esta bacio he entrado");
+  items.push("<li class=\"list-group-item\">No hay alumnos</li>");
+}
+
   $( "<ul/>", {
     "class": "list-group",
     html: items.join( "" )
