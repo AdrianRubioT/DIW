@@ -69,7 +69,7 @@ const convivenciaSchema = mongoose.Schema({
     tipiGrave15: Boolean,
 
 
-    telfono: String,
+    telefono: String,
     correo: String,
     alumnoIntermediario: String,
     familiar: String,

@@ -80,7 +80,7 @@ exports.create = (req, res) => {
         tipiGrave15: req.body.tipiGrave15 || false,
 
 
-        telfono: req.body.telfono,
+        telefono: req.body.telfono,
         correo: req.body.correo,
         alumnoIntermediario: req.body.alumnoIntermediario,
         familiar:req.body.familiar,
@@ -221,7 +221,7 @@ exports.update = (req, res) => {
        tipiGrave15: req.body.tipiGrave15 || false,
 
 
-       telfono: req.body.telfono,
+       telefono: req.body.telfono,
        correo: req.body.correo,
        alumnoIntermediario: req.body.alumnoIntermediario,
        familiar:req.body.familiar,
