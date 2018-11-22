@@ -8,14 +8,22 @@ $.getJSON( "http://localhost:3000/convivencia", function( data ) {
  
 /* si esta vacio se llenara un hueco indicando que esta vacio */
 if (items.length == 0) {
+
   /* console.log("al array esta vacio he entrado"); */
-  items.push("<li class=\"list-group-item\">No hay alumnos</li>");
-}
+  $( "<p/>", {
+    /* "class": "", */
+    html: "<p>no hay incidencias :)</p>"
+  }).appendTo( "#divLista" );
+
+}else{
 
   $( "<ul/>", {
     "class": "list-group",
     html: items.join( "" )
   }).appendTo( "#divLista" );
+}
+
+  
 });
 
 
