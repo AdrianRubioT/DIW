@@ -5,3 +5,7 @@
 .size-25{
     font-size: 25px;
 }
+
+.size-normal{
+    font-size: initial;
+}
