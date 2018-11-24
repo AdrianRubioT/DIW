@@ -134,14 +134,16 @@
 
 
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
+                    <div class="input-group-prepend input-group-text">
                             <input name="castigo3" id="castigo3" type="checkbox" value="true">
-                            <label for="castigo3">Privació del temps de recreació els dies</label>
-                            <input name="castigo3inicioCastigo" id="castigo3inicioCastigo" type="time" class="form-control">
-                            <!-- poner separador y acercar los times -->
-                            <input name="castigo3finCastigo" id="castigo3finCastigo" type="time" class="form-control">
-                        </div>
+                        <!-- poner separador y acercar los times -->
+                    </div>
+                    
+                    <label class="input-group-text" for="castigo3">Privació del temps de recreació els dies</label>
+                    
+                    <div class="input-group-append">
+                        <input class="form-control" name="castigo3inicioCastigo" id="castigo3inicioCastigo" type="time">
+                        <input class="form-control" name="castigo3finCastigo" id="castigo3finCastigo" type="time">
                     </div>
 
                 </div>
