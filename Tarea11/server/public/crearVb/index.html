@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario de medidas correctoras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+
+    <section class="cabecera">
+
+        <!-- ies la senia -->
+        <div class="laSenia">
+            <img src="img/logoLaSenia.png" alt="La Senia">
+        </div>
+
+        <!-- conselleria educacio -->
+        <div class="generalitat">
+            <img src="img/logoCVEducacio.png" alt="Conselleria Valenciana Educacio Culturta y deporte">
+        </div>
+
+    </section>
+
+    <section>
+        <!-- vigilar que el acento se sobresale de la linea de texto -->
+        <h1 class="jumbotron text-center">COMUNICACIÓ DE MESURES CORRECTORES</h1>
+
+        <!-- onsubmit="return onSubmit(this)" -->
+        <form action="http://localhost:3000/convivencia" method="POST">
+
+            <div class="form-row">
+
+                <div class="alumno col">
+
+                    <label class="sr-only" for="alumno">Alumne</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Alumne</div>
+                        </div>
+                        <input name="alumno" type="text" class="form-control" id="alumno" placeholder="Alumne">
+                    </div>
+
+                    <label class="sr-only" for="grupo">Grup</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Grup</div>
+                        </div>
+                        <input name="grupo" type="text" class="form-control" id="grupo" placeholder="Grup">
+                    </div>
+
+                </div>
+
+                <div class="profesor col">
+
+
+                    <label class="sr-only" for="profesor">PROFESOR/A:</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">PROFESOR/A:</div>
+                        </div>
+                        <input name="profesor" type="text" class="form-control" id="profesor" placeholder="PROFESOR/A:">
+                    </div>
+
+                    <label class="sr-only" for="horariAtencion">Horari d'atenció del profesor:</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Horari d'atenció del profesor:</div>
+                        </div>
+                        <input name="horariAtencion" type="time" class="form-control" id="horariAtencion" placeholder="Horari d'atenció del profesor:">
+                    </div>
+
+                </div>
+
+                <div class="momento col">
+
+                    <label class="sr-only" for="fechaIncidente">Data de l'incident:</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Data de l'incident:</div>
+                        </div>
+                        <input name="fechaIncidente" type="date" class="form-control" id="fechaIncidente" placeholder="Data de l'incident:">
+                        <input name="horaIncidente" type="time" class="form-control" id="horaIncidente" placeholder="Moment de l'incident:">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="castigo">
+
+                <p>En aplicació de l'article 37 del decret 39/08 sobre drets i deures, es comunica al
+                    pare/mare/tutor/tutora legal
+                    de l'alumne la imposició de la següent mesura correctora:
+                </p>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-text">
+                        <div class="input-group-prepend">
+                            <input name="castigo1" id="castigo1" type="checkbox" value="true">
+                        </div>
+                        <pre> </pre>
+                        <label for="castigo1">Compareixença davant el cap d'estudis/director</label>
+                    </div>
+                </div>
+
+                
+                <div class="input-group mb-3">
+                    <div class="input-group-text">
+                        <div class="input-group-prepend">
+                            <input name="castigo2" id="castigo2" type="checkbox" value="true">
+                        </div>
+
+                        <pre> </pre>
+                        <label for="castigo2">Retirada d'aparells electrònics</label>
+
+                        <pre> </pre>
+                        <input name="castigo2Aparell" id="castigo2Aparell" type="text" class="form-control" placeholder="aparells electrònics" />
+
+                        <pre> </pre>
+                        <small id="refencia" class="text-muted">El pare o la mare o tutor/ra legal de
+                            l'alumne podrà retirar l'aparell a partir del dia següent de
+                            rebre esta notificació en la direccrió d'estudis.
+                        </small>
+                    </div>
+                </div>
+
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input name="castigo3" id="castigo3" type="checkbox" value="true">
+                            <label for="castigo3">Privació del temps de recreació els dies</label>
+                            <input name="castigo3inicioCastigo" id="castigo3inicioCastigo" type="time" class="form-control">
+                            <!-- poner separador y acercar los times -->
+                            <input name="castigo3finCastigo" id="castigo3finCastigo" type="time" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="input-group mb-3">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <input name="castigo4" id="castigo4" type="checkbox" value="true">
+                            <label for="castigo4">Realizació de les següents tasques educadores:</label>
+                            <input name="castigo4tarea4" id="castigo4tarea4" type="text" class="form-control"
+                                placeholder="tasca">
+                            <label for="castigo4tarea4">els dies</label>
+                            <input name="castigo4diasTarea4" id="castigo4diasTarea4" type="text" class="form-control"
+                                name="castigoD">
+                            i amb l'orari
+                            <input name="castigo4inicioTarea4" id="castigo4inicioTarea4" type="time" class="form-control"
+                                name="castigoDinicio">
+                            -
+                            <input name="castigo4finTarea4" id="castigo4finTarea4" type="time" class="form-control"
+                                name="castigoDfinal">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input name="castigo5" id="castigo5" type="checkbox" value="true">
+                            <label for="castigo5">Suspenció del dret de l'asistència en activitats extraescolars i
+                                complementàries des de
+                            </label>
+                            <input name="castigo5inicioCastigo5" id="castigo5inicioCastigo5" type="time">
+                            fins a
+                            <input name="castigo5finCastigo5" id="castigo5finCastigo5" type="time">
+                            <small id="refencia" class="form-text text-muted">El pare o la mare o tutor/ra legal de
+                                l'alumne disposa d'en termini de 10 dies a partir de rebre
+                                esta comunicaió per al preceptiu trámit d'audiencia amb el profesor que ha imposat la
+                                mesura
+                                correctora. Per la qual cosa l'horari d'atencio del professor figura al costal del seu
+                                nom i telefon de
+                                l'institud en la capçalera.
+                            </small>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcionIncidente">Descripció de l'incident:</label>
+                    <textarea name="descripcionIncidente" class="form-control" id="descripcionIncidente" rows="3"
+                        placeholder="Descripcio de l'incident"></textarea>
+                </div>
+
+            </div>
+
+
+            <p>Interfaz tipificacion WIP</p>
+
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Tipicació (leve) de l'incident segons l'article 35:
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+
+                        <div class="tipicacioLeve">
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve1" id="tipiLeve1" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve1" type="text" class="form-control">
+                                    Les faltes de puntualitat injustificades
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve2" id="tipiLeve2" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve2" type="text" class="form-control">
+                                    Les faltes d'assistència injustificades
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve3" id="tipiLeve3" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve3" type="text" class="form-control">
+                                    Els actes que alteren el normal desenvolupament de les activitats del centre
+                                    educatiu,
+                                    especialment els que alteren el normal desenvolupament de les classes.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve4" id="tipiLeve4" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve4" type="text" class="form-control">
+                                    Els actes d'indisciplina.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve5" id="tipiLeve5" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label id="tipiLeve5" type="text" class="form-control">
+                                    Els actes d'incorreció o desconsideració, les injuries i les ofenses contra els
+                                    membres de
+                                    la
+                                    comunitat educativa.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve6" id="tipiLeve6" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve6" type="text" class="form-control">
+                                    El furt o deteriorament intencionat d'inmobles, materíals, documentació o recursos
+                                    del
+                                    centre.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve7" id="tipiLeve7" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve7" type="text" class="form-control">
+                                    El furt o deteriorament intencionat dels béns o materials dels membres de la
+                                    comunitat
+                                    educativa.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve8" id="tipiLeve8" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve8" type="text" class="form-control">
+                                    Les accions que puguen ser perjudicials per a la integritat i la salut dels membres
+                                    de la
+                                    comunitat educativa.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve9" id="tipiLeve9" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve9" type="text" class="form-control">
+                                    La negativa sistemàtica a portal el material necessari per al desenvolupament del
+                                    procés
+                                    d'ensenyament-aprenetage.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve10" id="tipiLeve10" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve10" type="text" class="form-control">
+                                    La negativa a translladar la informació facilitada als pares, mares, tutors, o
+                                    tutores per
+                                    part
+                                    del centre i viceversa.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve11" id="tipiLeve11" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve11" type="text" class="form-control">
+                                    L'alteració o manipulació de la documentació facilitada als pares, mares, tutors o
+                                    tutores
+                                    per
+                                    part del centre.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve12" id="tipiLeve12" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve12" type="text" class="form-control">
+                                    La suplantació de la personalitat dels embres de la comunitat escolar.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve13" id="tipiLeve13" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve13" type="text" class="form-control">
+                                    La utilizació inadecuada de les tecnologies de la informació i comunicació durant
+                                    les
+                                    activitats que es realitzen en centre educatiu.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve14" id="tipiLeve14" type="checkbox" value="true">
+                                    </div>
+                                </div>
+
+                                <!-- salto de line se sale del recuadro -->
+                                <label for="tipiLeve14" type="text" class="form-control">
+                                    L'ús de telèfons mòbils, aparells de so i altres aparells electrònics aliens al
+                                    procès al
+                                    procés d'ensenyament-aprenentage. Duran les activitats que es realitzen en el
+                                    centre
+                                    educatiu.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve15" id="tipiLeve15" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve15" type="text" class="form-control">
+                                    Els actes que dificulten o impedisquen una falte contrària a les normes de
+                                    convivència.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve16" id="tipiLeve16" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve16" type="text" class="form-control">
+                                    La desobediéncia en el compliment de les normes de carácter propi del centre i que
+                                    estiguen
+                                    incloses en el seu projecte educatiu.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve17" id="tipiLeve17" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve17" type="text" class="form-control">
+                                    La negativa al compliment de les mesures correctores adoptades davant de conductes
+                                    contráries a
+                                    les normes de convivéncia.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiLeve18" id="tipiLeve18" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiLeve18" type="text" class="form-control">
+                                    L'és inadequat de les infraestructures i béns o equips materials del centre.
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Tipicació (grave) de l'incident segons l'article 45:
+                        </button>
+
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="parteGrave">
+
+                            <p>
+                                Tipicació de l'incident segons l'article 45:
+                            </p>
+
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave1" id="tipiGrave1" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave1" type="text" class="form-control">
+                                    Els actes greus d'indisciplina i les injures i ofenses contra membres de la
+                                    comunitat educativa
+                                    que sobrepassen la incorreció o la desconsideració previstes en el article 35.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave2" id="tipiGrave2" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave2" type="text" class="form-control">
+                                    L'agressió fisca o moral, les amenaces i coaccions i la discriminació greu a
+                                    quaselvol membre
+                                    de la comunitat educativa, aixi com la falta de respecte greu a la integritat i la
+                                    dignitat
+                                    personal.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave3" id="tipiGrave3" type="checkbox" aria-label="Checkbox for following text input">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave3" type="text" class="form-control">
+                                    Les vexacions i humiliacions a quasevol membre de la comunitat scolar,
+                                    particularment si tenen
+                                    un comportament sexista o xenòfon, aixi com les que es realitzen contra els membres
+                                    més
+                                    vulnerables per les seues caracteristiques personals, socials o educatives.
+                                </label>
+                            </div>
+
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave4" id="tipiGrave4" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave4" type="text" class="form-control">
+                                    L'assetjament escolar.
+                                </label>
+                            </div>
+
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave5" id="tipiGrave5" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave5" type="text" class="form-control">
+                                    La suplantació de personalitat en actes de la vida docent.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave6" id="tipiGrave6" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave6" type="text" class="form-control">
+                                    La falsificació, el deteroprament o la sustracció de documentació acadèmica.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave7" id="tipiGrave7" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave7" type="text" class="form-control">
+                                    Els danys greus causats en els locals, materials o documents del centre ens els
+                                    béns dels
+                                    membres de la comunitat educativa.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave8" id="tipiGrave8" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave8" type="text" class="form-control">
+                                    Els actes injustificans que pertorben greument el normal desenvolupament de les
+                                    activitas del
+                                    centre.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave9" id="tipiGrave9" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave9" type="text" class="form-control">
+                                    <!-- preguntar perjudicar perjudiquen  -->
+                                    Les actuacios que puguen perjudicar greument la salut i la integritat personals
+                                    dels menbres de la comunitat educativa.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave10" id="tipiGrave10" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave10" type="text" class="form-control">
+                                    La introducció en el centre d'objectes perillosos o substàncies perjudicials per a
+                                    la salut i
+                                    la integritat personal dels membres de la comunitat educativa.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave11" id="tipiGrave11" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave11" type="text" class="form-control">
+                                    Les conductes tipificades com a contràries a les normes de convivència del centre
+                                    educatiu si
+                                    concorren circumstàncies del col·lectivitat o publicitat intencionada per qualsevol
+                                    mitjà.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave12" id="tipiGrave12" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave12" type="text" class="form-control">
+                                    La negativa reiterada al compliment de les mesures educatives correctores adoptades
+                                    davant de
+                                    contuctes contràries a les normes de convivència.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave13" id="tipiGrave13" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave13" type="text" class="form-control">
+                                    La negatica reiterada al compliment de les mesures disciplinàries adoptades davant
+                                    de faltes
+                                    que afecten greument a la convivència en el centre.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave14" id="tipiGrave14" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave14" type="text" class="form-control">
+                                    L'accés indegut sense autorització a fitxers i servidors del centre.
+                                </label>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="tipiGrave15" id="tipiGrave15" type="checkbox" value="true">
+                                    </div>
+                                </div>
+                                <label for="tipiGrave15" type="text" class="form-control">
+                                    Actes atempratoris respecte al projecte educatiu, aixi com al cácter propi del
+                                    centre.
+                                </label>
+                            </div>
+
+
+                            <!-- modelo checkbox -->
+                            <!-- <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <inputs id="tipiLeve" type="checkbox" aria-label="Checkbox for following text input">
+                                    </div>
+                                </div>
+                                <label type="text" class="form-control">
+            
+                                </label>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+            <div class="form-group list-group comunicacio">
+                <label>La comunicació als pares o tutors legals es fa pel següents mitjans: </label>
+
+                <div class="input-group mb-3">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <!-- <input name="checkboxTelefono" id="checkboxTelefono" type="checkbox" value="true"> -->
+                            <label for="checkboxTelefono">Tèlefon: </label>
+                            <pre> </pre>
+                            <input name="telefono" id="telefono" type="text" class="form-control" placeholder="Tèlefon">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <!-- <input name="checkboxCorreo" id="checkboxCorreo" type="checkbox" value="true"> -->
+                            <label for="checkboxCorreo">Correu: </label>
+                            <pre> </pre>
+                            <input name="correo" id="correo" type="text" class="form-control" placeholder="Correu">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <!-- <input name="comunicacionAlumno" id="comunicacionAlumno" type="checkbox" value="true"> -->
+                            <label for="comunicacionAlumno" for="">Per mig de l'alumne: </label>
+                            <pre> </pre>
+                            <!-- preguntar por alumnos intermediario -->
+                            <input name="alumnoIntermediario" id="alumnoIntermediario" type="text" class="form-control"
+                                placeholder="alumne">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <!-- <input name="compareinxenzaPadres" id="compareinxenzaPadres" type="checkbox" value="true"> -->
+                            <label for="compareinxenzaPadres">Amb compareixença del pare/mare/tutor/tutora legal:
+                            </label>
+                            <pre> </pre>
+                            <input name="familiar" id="familiar" type="text" class="form-control" placeholder="familiar">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <input type="submit">
+
+        </form onsubmit="onSubmit(this)">
+
+    </section>
+
+
+</body>
+
+</html>
