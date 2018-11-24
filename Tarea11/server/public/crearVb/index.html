@@ -176,36 +176,33 @@
                 <div class="form-group">
                     <label for="descripcionIncidente">Descripció de l'incident:</label>
                     <textarea name="descripcionIncidente" class="form-control" id="descripcionIncidente" rows="3"
-                        placeholder="Descripcio de l'incident"></textarea>
+                        placeholder="Explicació de l'incident"></textarea>
                 </div>
 
             </div>
             <!-- div castigo -->
 
-            <p>Interfaz tipificacion WIP</p>
 
             <div class="accordion" id="accordionExample">
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                Tipicació (leve) de l'incident segons l'article 35:
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#tipiLeve"
+                                aria-expanded="true" aria-controls="tipiLeve"> Tipicació (leve) de l'incident segons
+                                l'article 35:
                             </button>
                         </h5>
                     </div>
 
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div id="tipiLeve" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 
                         <div class="tipicacioLeve">
 
                             <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text">
-                                        <input name="tipiLeve1" id="tipiLeve1" type="checkbox" value="true">
-                                    </div>
+                                <div class="input-group-prepend input-group-text">
+                                    <input name="tipiLeve1" id="tipiLeve1" type="checkbox" value="true">
                                 </div>
-                                <label for="tipiLeve1" type="text" class="form-control">
+                                <label class="input-group-text" for="tipiLeve1" type="text" class="form-control">
                                     Les faltes de puntualitat injustificades
                                 </label>
                             </div>
@@ -216,7 +213,7 @@
                                         <input name="tipiLeve2" id="tipiLeve2" type="checkbox" value="true">
                                     </div>
                                 </div>
-                                <label for="tipiLeve2" type="text" class="form-control">
+                                <label class="input-group-text" for="tipiLeve2" type="text" class="form-control">
                                     Les faltes d'assistència injustificades
                                 </label>
                             </div>
@@ -227,7 +224,7 @@
                                         <input name="tipiLeve3" id="tipiLeve3" type="checkbox" value="true">
                                     </div>
                                 </div>
-                                <label for="tipiLeve3" type="text" class="form-control">
+                                <label class="input-group-text" for="tipiLeve3" type="text" class="form-control">
                                     Els actes que alteren el normal desenvolupament de les activitats del centre
                                     educatiu,
                                     especialment els que alteren el normal desenvolupament de les classes.
