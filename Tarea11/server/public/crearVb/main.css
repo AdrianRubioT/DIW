@@ -1,7 +1,16 @@
-.input-group-text{
+
+.card .input-group-text {
+    display: inline-block;
+    max-width: 100%;
+   /*  word-wrap: normal; */
+    /* background-color: brown; */
+/*     font-size: 52px; */
+}
+
+/* .input-group-text{
     max-width: 100%;
     word-wrap: break-word;
-}
+} */
 
 nav, section, footer{
     margin: 10px;
