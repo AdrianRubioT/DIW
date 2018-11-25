@@ -1,4 +1,5 @@
-
+/* apunta directamente a los label de las tipificaciones 
+    no consigo que se generen nuevas lineas */
 .card .input-group-text {
     display: inline-block;
     max-width: 100%;
