@@ -20,20 +20,20 @@ $.getJSON("http://localhost:3000/convivencia", function (data) {
 
   } else {
 
-/*     $.each(items, function (key, val) { */
+    $.each(items, function (key, val) {
       /* console.log(key); */
       /* console.log(val); */
-/*       val.click, function () {
-        alert("hola mundo");
-      }
-    }); */
+      val.on("click", holamundo, false);
 
-    /*     
-         */
+      /* click, function () {
+        alert("hola mundo");
+      } */
+    });
+
 
 
     $("<div/>", {
-      "class" : "btn-group-vertical mr-2",
+      "class": "btn-group-vertical mr-2",
       html: items.join("")
     }).appendTo("#divLista");
   }
