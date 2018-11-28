@@ -5,7 +5,7 @@ $.getJSON("http://localhost:3000/convivencia", function (data) {
   $.each(data, function (key, val) {
     /*   console.log(key); */
     /* <button type="button" class="btn btn-primary">Adrian</button> */
-    items.push("<button id='" + val._id + "' class='btn btn-primary'>" + val.alumno + "</button>");
+    items.push("<button id='" + val._id + "' class='btn btn-primary botones'>" + val.alumno + "</button>");
     /* items.push("<li id='" + val._id + "' class='list-group-item'>" + val.alumno + "</li>"); */
   });
 
@@ -20,27 +20,25 @@ $.getJSON("http://localhost:3000/convivencia", function (data) {
 
   } else {
 
-    $.each(items, function (key, val) {
-      /* console.log(key); */
-      /* console.log(val); */
-      val.on("click", holamundo, false);
-
-      /* click, function () {
-        alert("hola mundo");
-      } */
-    });
-
-
-
     $("<div/>", {
       "class": "btn-group-vertical mr-2",
       html: items.join("")
     }).appendTo("#divLista");
   }
 
+  var botones = document.getElementsByClassName("botones");
+  /* console.log(botones);
+  console.log("----------------------------------------------"); */
+  $.each(botones, function (key, val) {
+    /* console.log(val) */
+    val.addEventListener("click", obtenerinformacion, false);
+  });
 
 });
 
-function holamundo() {
-  alert("hola mundo");
+function obtenerinformacion(event) {
+  /* linea para obtener la id del boton */
+  /* console.log(event.target.id); */
+
+
 }
