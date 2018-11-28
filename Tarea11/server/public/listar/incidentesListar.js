@@ -39,6 +39,30 @@ $.getJSON("http://localhost:3000/convivencia", function (data) {
 function obtenerinformacion(event) {
   /* linea para obtener la id del boton */
   /* console.log(event.target.id); */
+  
+  
+  
+  recogerData(event.target.id);
+
+}
 
 
+
+
+function recogerData(idConvivencia) {
+
+  $.getJSON("http://localhost:3000/convivencia/" + idConvivencia, function (data) {
+    var items = [];
+    console.log(data);
+    /* $.each(data, function (key, val) {
+        console.log(key);
+      items.push("<button id='" + val._id + "' class='btn btn-primary botones'>" + val.alumno + "</button>");
+    }); */
+
+  });
+}
+
+
+function limpiarRellenar() {
+  
 }
