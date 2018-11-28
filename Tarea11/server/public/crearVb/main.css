@@ -1,17 +1,27 @@
 /* apunta directamente a los label de las tipificaciones 
     no consigo que se generen nuevas lineas */
 .card .input-group-text {
-    display: inline-block;
+    /* display: block; */
     max-width: 100%;
+
+    /* viva el css magico que hace las lineas */
+    white-space: normal;
+    
+    
+    text-align: left;
    /*  word-wrap: normal; */
     /* background-color: brown; */
 /*     font-size: 52px; */
 }
 
-/* .input-group-text{
-    max-width: 100%;
-    word-wrap: break-word;
-} */
+small{
+    float: left;
+}
+
+label{
+    white-space: normal;
+}
+
 
 .margen-top{
     margin-top: 20px;
