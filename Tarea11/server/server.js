@@ -32,7 +32,7 @@ mongoose.connect(dbConfig.url,{
 
 // Vamos a definir un "punto de inicio"
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname, 'public/index.html'));
+    res.sendFile(path.join(__dirname, 'public/inicio.html'));
 });
 
 
