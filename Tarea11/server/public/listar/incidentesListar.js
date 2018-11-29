@@ -37,32 +37,56 @@ $.getJSON("http://localhost:3000/convivencia", function (data) {
 });
 
 function obtenerinformacion(event) {
+
+  var camposRellenar = document.getElementsByClassName("rellenar");
+
+  
   /* linea para obtener la id del boton */
   /* console.log(event.target.id); */
-  
-  
-  
+  limpiarRellenar();
   recogerData(event.target.id);
-
-}
-
-
-
-
-function recogerData(idConvivencia) {
-
-  $.getJSON("http://localhost:3000/convivencia/" + idConvivencia, function (data) {
-    var items = [];
-    console.log(data);
-    /* $.each(data, function (key, val) {
-        console.log(key);
-      items.push("<button id='" + val._id + "' class='btn btn-primary botones'>" + val.alumno + "</button>");
-    }); */
-
-  });
-}
-
-
-function limpiarRellenar() {
   
+
+  
+
+  /* funcion que limpia todo los campos a rellenar */
+  function limpiarRellenar() {
+    $.each(camposRellenar, function (key, val) {
+      /* con val obtenemos el elemto */
+      /* console.log(val); */
+      val.innerText = "";
+    })
+  }
+
+
+  /* funcion que recoge los datos */
+  function recogerData(idConvivencia) {
+    $.getJSON("http://localhost:3000/convivencia/" + idConvivencia, function (data) {
+      /* console.log(data); */
+      $.each(data, function (key, val) {
+        datos.push(val);
+      });
+      console.log(datos[2]);
+      rellenarData(datos);
+    });
+
+  }
+
+  /* funcion que rellenara los campos  */
+  function rellenarData(datos) {
+   console.log(datos[0]);
+    //console.log(camposRellenar); 
+    
+    
+  
+    /* camposRellenar[0].innerText = datos[0]; */
+
+  }
+
+
+
 }
+
+
+
+
