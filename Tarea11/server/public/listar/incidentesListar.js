@@ -40,14 +40,14 @@ function obtenerinformacion(event) {
 
   var camposRellenar = document.getElementsByClassName("rellenar");
 
-  
+
   /* linea para obtener la id del boton */
   /* console.log(event.target.id); */
   limpiarRellenar();
   recogerData(event.target.id);
-  
 
-  
+
+
 
   /* funcion que limpia todo los campos a rellenar */
   function limpiarRellenar() {
@@ -63,22 +63,33 @@ function obtenerinformacion(event) {
   function recogerData(idConvivencia) {
     $.getJSON("http://localhost:3000/convivencia/" + idConvivencia, function (data) {
       /* console.log(data); */
-      $.each(data, function (key, val) {
-        datos.push(val);
-      });
-      console.log(datos[2]);
-      rellenarData(datos);
+      rellenarData(data);
     });
 
   }
 
   /* funcion que rellenara los campos  */
   function rellenarData(datos) {
-   console.log(datos[0]);
-    //console.log(camposRellenar); 
+    console.log(datos);
+    camposRellenar[0].innerText = datos.alumno;
+    camposRellenar[1].innerText = datos.grupo;
+    camposRellenar[2].innerText = datos.profesor;
+    camposRellenar[3].innerText = datos.fechaIncidente;
+    camposRellenar[4].innerText = datos.descripcionIncidente;
     
+    medidasCorrectoras(datos);
+    function medidasCorrectoras(datos) {
+      var castigos = [];
+      castigos.push(datos.castigo1);
+      console.log(castigos);
+
+
+
+    }
     
-  
+    camposRellenar[5].innerText = datos.alumno;
+    camposRellenar[6].innerText = datos.alumno;
+    camposRellenar[7].innerText = datos.alumno;
     /* camposRellenar[0].innerText = datos[0]; */
 
   }
