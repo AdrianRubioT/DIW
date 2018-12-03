@@ -79,10 +79,12 @@ function obtenerinformacion(event) {
     
     medidasCorrectoras(datos);
     function medidasCorrectoras(datos) {
-      var castigos = [];
+      console.log(hola());
+      
+      /* var castigos = [];
       castigos.push(datos.castigo1);
       console.log(castigos);
-
+ */
 
 
     }
