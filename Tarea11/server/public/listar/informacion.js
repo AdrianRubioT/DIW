@@ -17,6 +17,10 @@ function castigo3(diaInicio, diaFinal) {
     return "Privació del temps de recreació els dies: " + diaInicio + " fins a " + diaFinal;
 }
 
-function castigo4(tarea, dies, ) {
-    return "Realizació de les següents tasques educadores: " + tarea + " els dies " + dies + " i amb l'orari " + 
+function castigo4(tarea, dies, horario ) {
+    return "Realizació de les següents tasques educadores: " + tarea + " els dies " + dies + " i amb l'orari " + horario;
+}
+
+function castigo5(dies) {
+    return "Suspenció del dret de l'asistència en activitats extraescolars i complementàries des de " + dies;
 }
