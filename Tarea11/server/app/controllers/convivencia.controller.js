@@ -20,6 +20,28 @@ exports.create = (req, res) => {
         fechaIncidente: req.body.fechaIncidente,
         horaAtencioProfesor: req.body.horaAtencioProfesor,
 
+    /* castigos */
+    castigos: [{
+        castigo1: Boolean,
+
+        castigo2: Boolean,
+        castigo2Aparell: String,
+        
+        castigo3: Boolean,
+        castigo3inicioCastigo: String,
+        castigo3finCastigo: String,
+
+        castigo4: Boolean,
+        castigo4tarea4: String,
+        castigo4inicioTarea4: String,
+
+        castigo5: Boolean,
+        castigo5inicioCastigo5: String,
+        castigo5finCastigo5: String,
+    }],
+
+
+
         /* castigos */
         castigo1: req.body.castigo1 || false,
 
