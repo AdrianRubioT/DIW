@@ -9,3 +9,13 @@
 .size-normal{
     font-size: initial;
 }
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #6b7074;
+}
+
+.normalColor{
+    color: initial;
+}
