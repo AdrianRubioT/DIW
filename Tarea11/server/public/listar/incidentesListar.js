@@ -5,7 +5,7 @@ $.getJSON("http://localhost:3000/convivencia", function (data) {
   $.each(data, function (key, val) {
     /*   console.log(key); */
     /* <button type="button" class="btn btn-primary">Adrian</button> */
-    items.push("<button id='" + val._id + "' class='btn btn-danger botones normalColor'>" + val.alumno + "</button>");
+    items.push("<button id='" + val._id + "' class='btn  botones normalColor listaColor'>" + val.alumno + "</button>");
     /* items.push("<li id='" + val._id + "' class='list-group-item'>" + val.alumno + "</li>"); */
   });
 

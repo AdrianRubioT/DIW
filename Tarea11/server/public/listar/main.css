@@ -19,3 +19,22 @@ body{
 .normalColor{
     color: initial;
 }
+
+.gris1{
+    background-color: #969696;
+}
+
+.gris2{
+    background-color: #6f6f6f;
+}
+.gris3{
+    background-color: #d0c8c8;
+}
+
+
+.listaColor:nth-child(odd){
+    background-color: #969696;
+}
+.listaColor:nth-child(even){
+    background-color: #6f6f6f;
+}
