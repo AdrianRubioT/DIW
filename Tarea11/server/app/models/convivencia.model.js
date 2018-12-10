@@ -30,6 +30,29 @@ const convivenciaSchema = mongoose.Schema({
     descripcionIncidente: String,
 
     /* tipificacion leve */
+
+    tipiLeve:{
+        tipiLeve1: Boolean,
+        tipiLeve2: Boolean,
+        tipiLeve3: Boolean,
+        tipiLeve4: Boolean,
+        tipiLeve5: Boolean,
+        tipiLeve6: Boolean,
+        tipiLeve7: Boolean,
+        tipiLeve8: Boolean,
+        tipiLeve9: Boolean,
+        tipiLeve10: Boolean,
+        tipiLeve11: Boolean,
+        tipiLeve12: Boolean,
+        tipiLeve13: Boolean,
+        tipiLeve14: Boolean,
+        tipiLeve15: Boolean,
+        tipiLeve16: Boolean,
+        tipiLeve17: Boolean,
+        tipiLeve18: Boolean
+
+    };
+
     tipiLeve1: Boolean,
     tipiLeve2: Boolean,
     tipiLeve3: Boolean,
