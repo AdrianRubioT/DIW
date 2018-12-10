@@ -51,7 +51,7 @@ const convivenciaSchema = mongoose.Schema({
         tipiLeve17: Boolean,
         tipiLeve18: Boolean
 
-    };
+    },
 
     tipiLeve1: Boolean,
     tipiLeve2: Boolean,
