@@ -30,11 +30,7 @@ const convivenciaSchema = mongoose.Schema({
     descripcionIncidente: String,
 
     /* tipificacion leve */
-
-
-    
-    tipiLeve: [
-        
+    tipiLeve: [  
         Boolean,
         Boolean,
         Boolean,
@@ -57,8 +53,7 @@ const convivenciaSchema = mongoose.Schema({
 
 
     /* tipificacion grave */
-    tipiGrave: [
-        
+    tipiGrave: [       
         Boolean,
         Boolean,
         Boolean,

@@ -43,7 +43,6 @@ exports.create = (req, res) => {
         /* tipificacion leve */
 
         tipiLeve: [
-            
             req.body.tipiLeve1 || false,
             req.body.tipiLeve2 || false,
             req.body.tipiLeve3 || false,
@@ -64,9 +63,8 @@ exports.create = (req, res) => {
             req.body.tipiLeve18 || false,
         ],
 
+        /* tipificacion grave */
         tipiGrave: [
-            
-            /* tipificacion grave */
             req.body.tipiGrave1 || false,
             req.body.tipiGrave2 || false,
             req.body.tipiGrave3 || false,
