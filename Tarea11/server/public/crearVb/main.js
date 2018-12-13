@@ -21,7 +21,18 @@ function tFlipFLop(event) {
 
   document.getElementById("nivel").value = event.originalTarget.id;
 
+if (event.originalTarget.id == "leve") {
+  $(".card:nth-child(2) * input:checked").each(function( index ){
+    this.checked = false;
+  });
 
+}else if(event.originalTarget.id == "grave"){
+  $(".card:nth-child(1) * input:checked").each(function( index ){
+    this.checked = false;
+  });
+}
+
+  /* $(".card * input") */
 
 
   
