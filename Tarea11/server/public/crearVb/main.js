@@ -12,6 +12,7 @@ function cargar() {
   document.getElementById("leve").addEventListener("click", tFlipFLop, false);
   document.getElementById("grave").addEventListener("click", tFlipFLop, false);
 
+  
 }
 
 function tFlipFLop(event) {
