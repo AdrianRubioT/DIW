@@ -1,6 +1,6 @@
 
 let xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://mapas.valencia.es/lanzadera/opendata/OI-OBRAS-EJECUTADAS/JSON');
+xhr.open('GET', 'http://mapas.valencia.es/lanzadera/opendata/Infociudad/JSON');
 xhr.onload = function() {
     if (xhr.status === 200) {
         // Si todo ha ido bien
@@ -11,6 +11,8 @@ xhr.onload = function() {
         // vamos a transformarla en objeto
         jsonObjeto = JSON.parse(jsonResponse);
         console.log(jsonObjeto);
+        console.log(jsonObjeto.features[50]);
+
         // Veamoslo en consola si se quiere 
         //console.log(jsonObjeto.features);
 
