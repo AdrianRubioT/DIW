@@ -63,55 +63,57 @@ exports.create = (req, res) => {
         descripcionIncidente: req.body.descripcionIncidente,
 
         /* tipificacion leve */
-        tipiLeve1: req.body.tipiLeve1 || false,
-        tipiLeve2: req.body.tipiLeve2 || false,
-        tipiLeve3: req.body.tipiLeve3 || false,
-        tipiLeve4: req.body.tipiLeve4 || false,
-        tipiLeve5: req.body.tipiLeve5 || false,
-        tipiLeve6: req.body.tipiLeve6 || false,
-        tipiLeve7: req.body.tipiLeve7 || false,
-        tipiLeve8: req.body.tipiLeve8 || false,
-        tipiLeve9: req.body.tipiLeve9 || false,
-        tipiLeve10: req.body.tipiLeve10 || false,
-        tipiLeve11: req.body.tipiLeve11 || false,
-        tipiLeve12: req.body.tipiLeve12 || false,
-        tipiLeve13: req.body.tipiLeve13 || false,
-        tipiLeve14: req.body.tipiLeve14 || false,
-        tipiLeve15: req.body.tipiLeve15 || false,
-        tipiLeve16: req.body.tipiLeve16 || false,
-        tipiLeve17: req.body.tipiLeve17 || false,
-        tipiLeve18: req.body.tipiLeve18 || false,
 
-
+        tipiLeve: [
+            req.body.tipiLeve1 || false,
+            req.body.tipiLeve2 || false,
+            req.body.tipiLeve3 || false,
+            req.body.tipiLeve4 || false,
+            req.body.tipiLeve5 || false,
+            req.body.tipiLeve6 || false,
+            req.body.tipiLeve7 || false,
+            req.body.tipiLeve8 || false,
+            req.body.tipiLeve9 || false,
+            req.body.tipiLeve10 || false,
+            req.body.tipiLeve11 || false,
+            req.body.tipiLeve12 || false,
+            req.body.tipiLeve13 || false,
+            req.body.tipiLeve14 || false,
+            req.body.tipiLeve15 || false,
+            req.body.tipiLeve16 || false,
+            req.body.tipiLeve17 || false,
+            req.body.tipiLeve18 || false,
+        ],
 
         /* tipificacion grave */
-        tipiGrave1: req.body.tipiGrave1 || false,
-        tipiGrave2: req.body.tipiGrave2 || false,
-        tipiGrave3: req.body.tipiGrave3 || false,
-        tipiGrave4: req.body.tipiGrave4 || false,
-        tipiGrave5: req.body.tipiGrave5 || false,
-        tipiGrave6: req.body.tipiGrave6 || false,
-        tipiGrave7: req.body.tipiGrave7 || false,
-        tipiGrave8: req.body.tipiGrave8 || false,
-        tipiGrave9: req.body.tipiGrave9 || false,
-        tipiGrave10: req.body.tipiGrave10 || false,
-        tipiGrave11: req.body.tipiGrave11 || false,
-        tipiGrave12: req.body.tipiGrave12 || false,
-        tipiGrave13: req.body.tipiGrave13 || false,
-        tipiGrave14: req.body.tipiGrave14 || false,
-        tipiGrave15: req.body.tipiGrave15 || false,
-
+        tipiGrave: [
+            req.body.tipiGrave1 || false,
+            req.body.tipiGrave2 || false,
+            req.body.tipiGrave3 || false,
+            req.body.tipiGrave4 || false,
+            req.body.tipiGrave5 || false,
+            req.body.tipiGrave6 || false,
+            req.body.tipiGrave7 || false,
+            req.body.tipiGrave8 || false,
+            req.body.tipiGrave9 || false,
+            req.body.tipiGrave10 || false,
+            req.body.tipiGrave11 || false,
+            req.body.tipiGrave12 || false,
+            req.body.tipiGrave13 || false,
+            req.body.tipiGrave14 || false,
+            req.body.tipiGrave15 || false,
+        ],
 
         telefono: req.body.telfono,
         correo: req.body.correo,
         alumnoIntermediario: req.body.alumnoIntermediario,
-        familiar:req.body.familiar,
+        familiar: req.body.familiar,
 
-/* 
-        nombre: req.body.nombre || "Sin Nombre",
-        profesion: req.body.profesion || "Sin profesion",
-        puntosVida: req.body.vida || 42,
-        puntosCordura: req.body.puntosCordura || 21 */
+        /* 
+                nombre: req.body.nombre || "Sin Nombre",
+                profesion: req.body.profesion || "Sin profesion",
+                puntosVida: req.body.vida || 42,
+                puntosCordura: req.body.puntosCordura || 21 */
     })
 
     convivencia.save().then(data => {
@@ -175,78 +177,81 @@ exports.update = (req, res) => {
 
     // Find note and update it with the request body
     Convivencia.findByIdAndUpdate(req.params.convivenciaId, {
-        
-       /* datos Basicos */
-       alumno: req.body.alumno,
-       grupo: req.body.grupo,
-       profesor: req.body.profesor,
-       fechaIncidente: req.body.fechaIncidente,
-       horaAtencioProfesor: req.body.horaAtencioProfesor,
 
-       /* castigos */
-       castigo1: req.body.castigo1 || false,
+        /* datos Basicos */
+        alumno: req.body.alumno,
+        grupo: req.body.grupo,
+        profesor: req.body.profesor,
+        fechaIncidente: req.body.fechaIncidente,
+        horaAtencioProfesor: req.body.horaAtencioProfesor,
 
-       castigo2: req.body.castigo2 || false,
+        /* castigos */
+        castigo1: req.body.castigo1 || false,
 
-       castigo3: req.body.castigo2Aparell,
-       castigo3: req.body.castigo3 || false,
-       castigo3inicioCastigo: req.body.castigo3inicioCastigo,
-       castigo3finCastigo: req.body.castigo3finCastigo,
+        castigo2: req.body.castigo2 || false,
 
-       castigo4: req.body.castigo4 || false,
-       castigo4tarea4: req.body.castigo4tarea4,
-       castigo4inicioTarea4: req.body.castigo4inicioTarea4,
+        castigo3: req.body.castigo2Aparell,
+        castigo3: req.body.castigo3 || false,
+        castigo3inicioCastigo: req.body.castigo3inicioCastigo,
+        castigo3finCastigo: req.body.castigo3finCastigo,
 
-       castigo5: req.body.castigo5 || false,
-       castigo5inicioCastigo5: req.body.castigo5inicioCastigo5,
-       castigo5finCastigo5: req.body.castigo5finCastigo5,
+        castigo4: req.body.castigo4 || false,
+        castigo4tarea4: req.body.castigo4tarea4,
+        castigo4inicioTarea4: req.body.castigo4inicioTarea4,
 
-       descripcionIncidente: req.body.descripcionIncidente,
+        castigo5: req.body.castigo5 || false,
+        castigo5inicioCastigo5: req.body.castigo5inicioCastigo5,
+        castigo5finCastigo5: req.body.castigo5finCastigo5,
 
-       /* tipificacion leve */
-       tipiLeve1: req.body.tipiLeve1 || false,
-       tipiLeve2: req.body.tipiLeve2 || false,
-       tipiLeve3: req.body.tipiLeve3 || false,
-       tipiLeve4: req.body.tipiLeve4 || false,
-       tipiLeve5: req.body.tipiLeve5 || false,
-       tipiLeve6: req.body.tipiLeve6 || false,
-       tipiLeve7: req.body.tipiLeve7 || false,
-       tipiLeve8: req.body.tipiLeve8 || false,
-       tipiLeve9: req.body.tipiLeve9 || false,
-       tipiLeve10: req.body.tipiLeve10 || false,
-       tipiLeve11: req.body.tipiLeve11 || false,
-       tipiLeve12: req.body.tipiLeve12 || false,
-       tipiLeve13: req.body.tipiLeve13 || false,
-       tipiLeve14: req.body.tipiLeve14 || false,
-       tipiLeve15: req.body.tipiLeve15 || false,
-       tipiLeve16: req.body.tipiLeve16 || false,
-       tipiLeve17: req.body.tipiLeve17 || false,
-       tipiLeve18: req.body.tipiLeve18 || false,
+        descripcionIncidente: req.body.descripcionIncidente,
+
+        tipiLeve: [
+            null,
+            req.body.tipiLeve1 || false,
+            req.body.tipiLeve2 || false,
+            req.body.tipiLeve3 || false,
+            req.body.tipiLeve4 || false,
+            req.body.tipiLeve5 || false,
+            req.body.tipiLeve6 || false,
+            req.body.tipiLeve7 || false,
+            req.body.tipiLeve8 || false,
+            req.body.tipiLeve9 || false,
+            req.body.tipiLeve10 || false,
+            req.body.tipiLeve11 || false,
+            req.body.tipiLeve12 || false,
+            req.body.tipiLeve13 || false,
+            req.body.tipiLeve14 || false,
+            req.body.tipiLeve15 || false,
+            req.body.tipiLeve16 || false,
+            req.body.tipiLeve17 || false,
+            req.body.tipiLeve18 || false,
+        ],
+
+        tipiGrave: [
+            null,
+            /* tipificacion grave */
+            req.body.tipiGrave1 || false,
+            req.body.tipiGrave2 || false,
+            req.body.tipiGrave3 || false,
+            req.body.tipiGrave4 || false,
+            req.body.tipiGrave5 || false,
+            req.body.tipiGrave6 || false,
+            req.body.tipiGrave7 || false,
+            req.body.tipiGrave8 || false,
+            req.body.tipiGrave9 || false,
+            req.body.tipiGrave10 || false,
+            req.body.tipiGrave11 || false,
+            req.body.tipiGrave12 || false,
+            req.body.tipiGrave13 || false,
+            req.body.tipiGrave14 || false,
+            req.body.tipiGrave15 || false,
+        ],
 
 
-
-       /* tipificacion grave */
-       tipiGrave1: req.body.tipiGrave1 || false,
-       tipiGrave2: req.body.tipiGrave2 || false,
-       tipiGrave3: req.body.tipiGrave3 || false,
-       tipiGrave4: req.body.tipiGrave4 || false,
-       tipiGrave5: req.body.tipiGrave5 || false,
-       tipiGrave6: req.body.tipiGrave6 || false,
-       tipiGrave7: req.body.tipiGrave7 || false,
-       tipiGrave8: req.body.tipiGrave8 || false,
-       tipiGrave9: req.body.tipiGrave9 || false,
-       tipiGrave10: req.body.tipiGrave10 || false,
-       tipiGrave11: req.body.tipiGrave11 || false,
-       tipiGrave12: req.body.tipiGrave12 || false,
-       tipiGrave13: req.body.tipiGrave13 || false,
-       tipiGrave14: req.body.tipiGrave14 || false,
-       tipiGrave15: req.body.tipiGrave15 || false,
-
-
-       telefono: req.body.telfono,
-       correo: req.body.correo,
-       alumnoIntermediario: req.body.alumnoIntermediario,
-       familiar:req.body.familiar,
+        telefono: req.body.telfono,
+        correo: req.body.correo,
+        alumnoIntermediario: req.body.alumnoIntermediario,
+        familiar: req.body.familiar,
 
     }, { new: true })
         .then(convivencia => {

@@ -17,94 +17,93 @@
     crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  
+
   <script src="informacion.js"></script>
   <script src="incidentesListar.js"></script>
 </head>
 
+
 <body>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Lista incidencias</h1>
 
+  <div class="container">
+    <h1 class="display-4">Lista incidencias</h1>
 
+    <div class="container-fluid">
+      <div class="row">
 
-      <div class="container-fluid">
-        <div class="row">
-
-          <div class="col-">
-            <div id="divLista">
-              <p>Listado alumnos:</p>
-              <!-- listado de lo devuelto de la base de datos -->
-              <!-- <div class="btn-group-vertical mr-2" role="group" aria-label="First group">
+        <div class="col-">
+          <div id="divLista">
+            <p>Listado alumnos:</p>
+            <!-- listado de lo devuelto de la base de datos -->
+            <!-- <div class="btn-group-vertical mr-2" role="group" aria-label="First group">
                 <button type="button" class="btn btn-primary">Adrian</button>
                 <button type="button" class="btn btn-primary">adrian rubio</button>
                 <button type="button" class="btn btn-primary">3</button>
                 <button type="button" class="btn btn-primary">4</button>
               </div> -->
 
+          </div>
+        </div>
+
+
+        <div class="size-20 col-sm">
+          <p class="size-normal">Detalles del parte:</p>
+
+          <div id="divInformacion" class="container row ">
+
+            <!-- alert alert-success -->
+            <div class="col-sm border border-secondary rounded-left gris1">
+              Alumno:
+            </div>
+            <div class="rellenar col-lg border border-secondary rounded-right gris1">
+              adrian Rubio
             </div>
           </div>
 
+          <div id="divInformacion" class="container row ">
 
-          <div class="size-20 col-sm">
-            <p class="size-normal">Detalles del parte:</p>
-
-            <div id="divInformacion" class="container row ">
-
-              <!-- alert alert-success -->
-              <div class="col-sm border border-secondary rounded-left bg-info">
-                Alumno:
-              </div>
-              <div class="rellenar col-lg border border-secondary rounded-right bg-info">
-                adrian Rubio
-              </div>
+            <div class="col-sm border border-secondary rounded-left gris2">
+              Grupo:
+            </div>
+            <div class="rellenar col-lg border border-secondary rounded-right gris2">
+              DAW2
             </div>
 
-            <div id="divInformacion" class="container row ">
+          </div>
 
-              <div class="col-sm border border-secondary rounded-left bg-info">
-                Grupo:
-              </div>
-              <div class="rellenar col-lg border border-secondary rounded-right bg-info">
-                DAW2
-              </div>
+          <div id="divInformacion" class="container row ">
 
+            <div class="col-sm border border-secondary rounded-left gris1">
+              Profesor:
+            </div>
+            <div class="rellenar col-lg border border-secondary rounded-right gris1">
+              Angel
             </div>
 
-            <div id="divInformacion" class="container row ">
+          </div>
 
-              <div class="col-sm border border-secondary rounded-left bg-info">
-                Profesor:
-              </div>
-              <div class="rellenar col-lg border border-secondary rounded-right bg-info">
-                Angel
-              </div>
+          <div id="divInformacion" class="container row ">
 
+            <div class="col-sm border border-secondary rounded-left gris2">
+              Hora incidente:
+            </div>
+            <div class="rellenar col-lg border border-secondary rounded-right gris2">
+              19/12/2018 06:51
             </div>
 
-            <div id="divInformacion" class="container row ">
+          </div>
 
-              <div class="col-sm border border-secondary rounded-left bg-info">
-                Hora incidente:
-              </div>
-              <div class="rellenar col-lg border border-secondary rounded-right bg-info">
-                19/12/2018 06:51
-              </div>
+          <div id="divInformacion" class="container row ">
 
+            <div class="col-sm border border-secondary rounded gris1">
+              <p>Descripcion del incidente:</p>
+              <div class="rellenar">El alumno se ha liado a palos con otro alumno y se algo mas para algo mas mas mas
+                mas</div>
             </div>
 
-            <div id="divInformacion" class="container row ">
+          </div>
 
-              <div class="col-sm border border-secondary rounded bg-primary">
-                <p>Descripcion del incidente:</p>
-                <div class="rellenar">El alumno se ha liado a palos con otro alumno y se algo mas para algo mas mas mas
-                  mas</div>
-              </div>
-
-            </div>
-
-            <!-- <div id="divInformacion" class="container row ">
+          <!-- <div id="divInformacion" class="container row ">
               <div class=" col-lg border border-secondary rounded bg-info">
                 <p>Medides correctores:</p>
                 <ul class="size-normal list-group">
@@ -114,65 +113,60 @@
               </div>
             </div>
  -->
-            <div id="divInformacion" class="container row ">
-              <div class=" col-lg border border-secondary rounded bg-info">
-                <button class="size-20 btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-                  aria-expanded="false" aria-controls="collapseExample">
-                  Mesures correctores:
-                </button>
-                <div class="collapse" id="collapseExample">
-                  <ul class="rellenar size-normal list-group">
-                    <li class="list-group-item">Compareixença davant el cap d'estudis/director</li>
-                    <li class="list-group-item">Retirada d'aparells electrònics (aparell)</li>
-                  </ul>
-                </div>
+          <div id="divInformacion" class="container row ">
+            <div class=" col-lg border border-secondary rounded gris2">
+              <button class="size-20 btn gris3 normalColor" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Mesures correctores:
+              </button>
+              <div class="collapse" id="collapseExample">
+                <ul class="rellenar size-normal list-group">
+                  <li class="list-group-item">Compareixença davant el cap d'estudis/director</li>
+                  <li class="list-group-item">Retirada d'aparells electrònics (aparell)</li>
+                </ul>
               </div>
             </div>
-
-            <div id="divInformacion" class="container row ">
-              <div class=" col-lg border border-secondary rounded bg-info">
-
-                <button class="size-20 btn btn-primary" type="button" data-toggle="collapse" data-target="#tipificacio"
-                  aria-expanded="false" aria-controls="collapseExample">
-                  Tipificacio:
-                </button>
-
-                <div class="collapse" id="tipificacio">
-                  <ul class="rellenar size-normal list-group">
-                    <li class="list-group-item">Compareixença davant el cap d'estudis/director</li>
-                    <li class="list-group-item">Retirada d'aparells electrònics (aparell)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div id="divInformacion" class="container row ">
-              <div class=" col-lg border border-secondary rounded bg-info">
-
-                <button class="size-20 btn btn-primary" type="button" data-toggle="collapse" data-target="#contacto"
-                  aria-expanded="false" aria-controls="collapseExample">
-                  Contacte:
-                </button>
-
-                <div class="collapse" id="contacto">
-                  <ul class="rellenar size-normal list-group">
-                    <li class="list-group-item">Compareixença davant el cap d'estudis/director</li>
-                    <li class="list-group-item">Retirada d'aparells electrònics (aparell)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- /div de la tabla de incidencias -->
           </div>
 
+          <div id="divInformacion" class="container row ">
+            <div class=" col-lg border border-secondary rounded gris1">
+
+              <button class="size-20 btn gris3 normalColor" type="button" data-toggle="collapse" data-target="#tipificacio"
+                aria-expanded="false" aria-controls="collapseExample">
+                Tipificacio:
+              </button>
+
+              <div class="collapse" id="tipificacio">
+                <ul class="rellenar size-normal list-group">
+                  <li class="list-group-item">Compareixença davant el cap d'estudis/director</li>
+                  <li class="list-group-item">Retirada d'aparells electrònics (aparell)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="divInformacion" class="container row ">
+            <div class=" col-lg border border-secondary rounded gris2">
+
+              <button class="size-20 btn gris3 normalColor" type="button" data-toggle="collapse" data-target="#contacto"
+                aria-expanded="false" aria-controls="collapseExample">
+                Contacte:
+              </button>
+
+              <div class="collapse" id="contacto">
+                <ul class="rellenar size-normal list-group">
+                  <li class="list-group-item">Compareixença davant el cap d'estudis/director</li>
+                  <li class="list-group-item">Retirada d'aparells electrònics (aparell)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- /div de la tabla de incidencias -->
         </div>
 
-
       </div>
-
-
 
 
     </div>
@@ -181,6 +175,11 @@
 
 
   </div>
+
+
+
+
+
 </body>
 
 </html>
