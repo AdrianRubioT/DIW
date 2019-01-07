@@ -1,6 +1,6 @@
 
 let xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://mapas.valencia.es/lanzadera/opendata/Infociudad/JSON');
+xhr.open('GET', 'http://mapas.valencia.es/lanzadera/opendata/INNOSOCIAL/JSON ');
 xhr.onload = function() {
     if (xhr.status === 200) {
         // Si todo ha ido bien
@@ -10,8 +10,8 @@ xhr.onload = function() {
         // ahora aun se trata de un texto, 
         // vamos a transformarla en objeto
         jsonObjeto = JSON.parse(jsonResponse);
-        console.log(jsonObjeto);
-        console.log(jsonObjeto.features[50]);
+        //console.log(jsonObjeto);
+        //console.log(jsonObjeto.features[50]);
 
         // Veamoslo en consola si se quiere 
         //console.log(jsonObjeto.features);
@@ -31,12 +31,14 @@ xhr.onload = function() {
             var td = document.createElement('td');
 
             // Creamos un txt con el contenido obtenido
-            var txt = document.createTextNode(element.properties.titulo);
+            var txt = document.createTextNode(element.properties.gid);
             //console.log(element.properties.titulo);
             var tdC = document.createElement('td');
-            var txtC = document.createTextNode(element.properties.contratista);
+            var txtC = document.createTextNode(element.properties.nombre);
             var tdP = document.createElement('td');
-            var txtP = document.createTextNode(element.properties.presupuesto);
+            var txtP = document.createTextNode(element.properties.email);
+            var tdR = document.createElement('td');
+            var txtR = document.createTextNode(element.properties.loc);
             // Anyadimos en cascada los elementos
             td.appendChild(txt);
             tr.appendChild(td);
@@ -44,7 +46,12 @@ xhr.onload = function() {
             tr.appendChild(tdC);
             tdP.appendChild(txtP);
             tr.appendChild(tdP);
+            
+            tdR.appendChild(txtR);
+            tr.appendChild(tdR);
+
             tbl.appendChild(tr);
+            
 
         });
         
