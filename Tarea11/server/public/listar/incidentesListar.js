@@ -70,17 +70,42 @@ function obtenerinformacion(event) {
 
   /* funcion que rellenara los campos  */
   function rellenarData(datos) {
-    console.log(datos);
+
+
+    //console.log(datos);
     camposRellenar[0].innerText = datos.alumno;
     camposRellenar[1].innerText = datos.grupo;
     camposRellenar[2].innerText = datos.profesor;
     camposRellenar[3].innerText = datos.fechaIncidente;
     camposRellenar[4].innerText = datos.descripcionIncidente;
-    
+
     medidasCorrectoras(datos);
     function medidasCorrectoras(datos) {
-      console.log(hola());
-      
+
+      var padre = document.getElementById("listaMedidasCorrectoras");
+      /*while (padre.firstChild){
+        padre.removeChild();
+      }*/
+
+      //console.log(datos);
+      console.log(padre);
+      if (!datos.castigo1) {
+
+        //<li class="list-group-item">Retirada d'aparells electrònics (aparell)</li>
+        //var castigo = 
+        var li = document.createElement("li");
+        li.setAttribute("class","list-group-item");
+        li.appendChild(document.createTextNode(castigo1()));
+        padre.appendChild(li);
+        /*
+        $(padre).append('<li/>', {
+          'class' : 'list-group-item'
+        }).text("castigo1()");
+        */
+        //padre.append(castigo);
+        
+      }
+
       /* var castigos = [];
       castigos.push(datos.castigo1);
       console.log(castigos);
@@ -88,10 +113,10 @@ function obtenerinformacion(event) {
 
 
     }
-    
-    camposRellenar[5].innerText = datos.alumno;
-    camposRellenar[6].innerText = datos.alumno;
-    camposRellenar[7].innerText = datos.alumno;
+
+    //camposRellenar[5].innerText = datos.alumno;
+    //camposRellenar[6].innerText = datos.alumno;
+    //camposRellenar[7].innerText = datos.alumno;
     /* camposRellenar[0].innerText = datos[0]; */
 
   }
