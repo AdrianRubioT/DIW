@@ -1,0 +1,27 @@
+// This is your Grid container. 
+// Now take this grid, and alter it so that the columns are not the same width. Create a ratio-based array. 
+
+
+ul {
+  display: grid;
+  grid-template-columns: 3fr 4fr 1fr 2fr;
+  grid-gap: 1rem;
+}
+
+
+//--------------------------------------
+// Additional Visual Styling
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #F6F3EA;
+  font-family: Avenir, Heveltica, Arial, san-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+li {
+  padding: 1em;
+  background: #F9423A;
+}

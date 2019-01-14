@@ -83,48 +83,38 @@ function obtenerinformacion(event) {
     function medidasCorrectoras(datos) {
 
       var padre = document.getElementById("listaMedidasCorrectoras");
-      /*while (padre.firstChild){
-        padre.removeChild();
-      }*/
 
-      //console.log(datos);
-      console.log(padre);
+      console.log(datos);
       if (!datos.castigo1) {
 
         //<li class="list-group-item">Retirada d'aparells electrònics (aparell)</li>
-        //var castigo = 
         var li = document.createElement("li");
-        li.setAttribute("class","list-group-item");
+        li.setAttribute("class", "list-group-item");
         li.appendChild(document.createTextNode(castigo1()));
         padre.appendChild(li);
-        /*
-        $(padre).append('<li/>', {
-          'class' : 'list-group-item'
-        }).text("castigo1()");
-        */
-        //padre.append(castigo);
-        
       }
 
-      /* var castigos = [];
-      castigos.push(datos.castigo1);
-      console.log(castigos);
- */
+      if (!datos.castigo2) {
 
+        var li2 = document.createElement("li");
+        li2.setAttribute("class", "list-group-item");
+        li2.appendChild(document.createTextNode(castigo2()));
+        padre.appendChild(li2);
+
+
+      }
+
+      //camposRellenar[5].innerText = datos.alumno;
+      //camposRellenar[6].innerText = datos.alumno;
+      //camposRellenar[7].innerText = datos.alumno;
+      /* camposRellenar[0].innerText = datos[0]; */
 
     }
 
-    //camposRellenar[5].innerText = datos.alumno;
-    //camposRellenar[6].innerText = datos.alumno;
-    //camposRellenar[7].innerText = datos.alumno;
-    /* camposRellenar[0].innerText = datos[0]; */
+
 
   }
 
 
 
 }
-
-
-
-

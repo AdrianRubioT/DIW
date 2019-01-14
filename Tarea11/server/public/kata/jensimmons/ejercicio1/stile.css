@@ -1,0 +1,29 @@
+// This is your Grid container. 
+// Add some code to create a grid on the <ul>. 
+// Make four flexible columns.
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  
+}
+
+
+
+//--------------------------------------
+// Additional Visual Styling
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #F6F3EA;
+  font-family: Avenir, Heveltica, Arial, san-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+li {
+  padding: 1em;
+  background: #F9423A;
+}
