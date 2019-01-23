@@ -1,10 +1,16 @@
+/* body{
+    width: 100%;
+    height: 100%;
+} */
+
 .container {
+
     display: grid;
     grid-gap: 5px;    
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px 350px 50px;
+    grid-template-rows: 50px 1fr 50px;
     grid-template-areas:
-        "h h h h h h h h h h h h"
+        "m m h h h h h h h h h h"
         "m m c c c c c c c c c c"
         "m m f f f f f f f f f f";
 }
@@ -22,11 +28,13 @@
     display: grid;
     grid-gap: 5px;    
     grid-template-columns:1fr;
-    grid-template-rows: 50px 30css grid align inside other grid0px 50px;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
     grid-template-areas:
         "u"
-        "i"
+        "r"
         "l";
+        justify-items: center;
+        align-items: center;
 }
 
 .content {
@@ -45,16 +53,70 @@
 }
 
 .rueda{
-    grid-area: i;
+    grid-area: r;
     background-color: darkblue;
+    
+    display: grid;
+    grid-gap: 10px;    
+    grid-template-columns:1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr ;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+
+        justify-items: center;
+        align-items: center;
+    
+}
+
+.rueda:nth-child(2){
+/*     height: 100px;
+    width: 100px; */
+     /* grid-area: b;  */
+   
+}
+
+
+.oreo{
+    grid-area: a;
+    height: 50px;
+    width: 50px;
+    background-image: url("img/oreo.jpeg");
+    background-size: cover;
+    background-position:center;
+}
+
+.chipAhoy{
+    grid-area: b;
+    height: 100px;
+    width: 100px;
+    background-image: url("img/chipAhoy.jpeg");
+    background-size: cover;
+    background-position:center;
+}
+
+.galletaNavidad{
+    grid-area: c;
+    height: 50px;
+    width: 50px;
+    background-image: url("img/galletaNavidad.jpeg");
+    background-size: cover;
+    background-position:center;
 }
 
 .abajo{
     grid-area: l;
     background-color: darkgoldenrod;
-    transform: rotate(180deg); 
+    
 
 }
 
+.abajo img{
+    transform: rotate(180deg); 
+}
 
-
+img{
+    height: 50px;
+    width: 50px;
+}
