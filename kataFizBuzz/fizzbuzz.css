@@ -1,0 +1,17 @@
+li:nth-child(3n)::before{
+    color: red;
+    content: " Fizz";
+}
+li:nth-child(3n){
+    list-style: none;
+}
+
+li:nth-child(5n)::after{
+    color: violet;
+    content: " Buzz";
+    list-style: none;
+}
+
+li:nth-child(5n){
+    list-style: none;
+}
